@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
-import { Button } from 'antd';
+import { Provider } from 'react-redux';
+import { store } from 'models/store';
+import PostList from 'containers/PostList';
 import './App.less';
 
 const App: FC = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
+  <Provider store={store}>
+    <PostList />
+  </Provider>
 );
 
 export default App;
