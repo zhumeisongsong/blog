@@ -1,7 +1,7 @@
-import React, { useMemo, useContext } from 'react';
-import { StoreContext } from 'containers/PostList/store';
+import { useMemo, useContext } from 'react';
+import { StoreContext } from 'containers/Post/store';
 
-const List = () => {
+const GridList = () => {
   const data = useContext(StoreContext);
 
   return useMemo(
@@ -16,4 +16,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default GridList;

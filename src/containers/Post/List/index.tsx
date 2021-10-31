@@ -1,8 +1,8 @@
-import React, { useMemo, useEffect, useCallback } from 'react';
+import { useMemo, useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import List from 'components/List';
+import List from 'components/GridList';
 import { RootState } from 'models/store';
-import { StoreContext } from 'containers/PostList/store';
+import { StoreContext } from 'containers/Post/store';
 
 const PostList = () => {
   const dispatch = useDispatch();

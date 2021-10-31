@@ -6,7 +6,7 @@ import storage from 'redux-persist/lib/storage';
 import updatedPlugin, { ExtraModelsFromUpdated } from '@rematch/updated';
 import loadingPlugin, { ExtraModelsFromLoading } from '@rematch/loading';
 
-import { models, RootModel } from './';
+import { models, RootModel } from 'models/';
 
 type FullModel = ExtraModelsFromLoading<RootModel> &
   ExtraModelsFromUpdated<RootModel>;

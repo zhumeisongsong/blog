@@ -1,5 +1,5 @@
-import React, { createContext } from 'react';
-import { Post } from 'api/index';
+import { createContext } from 'react';
+import { Post } from 'api/';
 
 export type PostListProps = Post[] | null;
 

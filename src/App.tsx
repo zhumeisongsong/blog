@@ -1,12 +1,12 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Provider } from 'react-redux';
 import { store } from 'models/store';
-import PostList from 'containers/PostList';
+import RouteConfig from 'routes/';
 import './App.less';
 
 const App: FC = () => (
   <Provider store={store}>
-    <PostList />
+    <RouteConfig />
   </Provider>
 );
 
