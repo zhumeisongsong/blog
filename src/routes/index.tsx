@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { HashRouter as Router, Switch } from 'react-router-dom';
 import RouteWithSubRoutes from './components/RouteWithSubRoutes';
 import routes from './config';
 
