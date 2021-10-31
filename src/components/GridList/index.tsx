@@ -1,23 +1,32 @@
-import { useMemo, useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { StoreContext } from 'containers/Post/store';
+import { useMemo, useContext, useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
+import { StoreContext } from 'containers/Post/List/store';
+import { GridListContainer, GridListItem } from './style';
 
 const GridList = () => {
-  const data = useContext(StoreContext);
+  const history = useHistory();
+  const { state } = useContext(StoreContext);
+
+  const onClick = useCallback(
+    (id) => {
+      history.push(`/${id}`);
+    },
+    [history]
+  );
 
   return useMemo(
     () => (
-      <div>
-        {data &&
-          data.length > 0 &&
-          data.map((item) => (
-            <Link to={`/${item.id}`} key={item.id}>
+      <GridListContainer>
+        {state &&
+          state.length > 0 &&
+          state.map((item) => (
+            <GridListItem onClick={() => onClick(item.id)} key={item.id}>
               {item.title}
-            </Link>
+            </GridListItem>
           ))}
-      </div>
+      </GridListContainer>
     ),
-    [data]
+    [state, onClick]
   );
 };
 

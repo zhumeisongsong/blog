@@ -1,6 +1,6 @@
 import { createModel } from '@rematch/core';
 import { RootModel } from '.';
-import { getPosts, Post } from '../api';
+import { getPosts, getPost, Post } from '../api';
 
 export type PostModel = { listData: Post[] | null; detailData: Post | null };
 
@@ -22,6 +22,13 @@ export default createModel<RootModel>()({
       const res = await getPosts();
 
       this.setState({ listData: res.data.posts });
+    },
+    async getDetailDataAsync(payload, state) {
+      this.setState({ detailData: null });
+
+      const res = await getPost(payload);
+
+      this.setState({ detailData: res.data.post });
     },
   }),
 });

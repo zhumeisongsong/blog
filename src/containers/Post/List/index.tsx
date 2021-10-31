@@ -2,7 +2,7 @@ import { useMemo, useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import GridList from 'components/GridList';
 import { RootState } from 'models/store';
-import { StoreContext } from 'containers/Post/store';
+import { StoreContext } from 'containers/Post/List/store';
 
 const PostList = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const PostList = () => {
 
   return useMemo(
     () => (
-      <StoreContext.Provider value={listData}>
+      <StoreContext.Provider value={{state: listData}}>
         <GridList />
       </StoreContext.Provider>
     ),

@@ -26,15 +26,16 @@ export const getPosts = () => {
 
 export const getPost = (id: string) => {
   return http.post('', {
-    query: `
-    project(
-      id:"${id}"
-    ) {
-      id
-      title
-      content
-      published_at
-      updated_at
+    query: `{
+      post(
+        id:"${id}"
+      ){
+        id
+        title
+        content
+        published_at
+        updated_at
+      }
     }`,
   });
 };

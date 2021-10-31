@@ -1,8 +1,23 @@
-import { useMemo } from 'react';
-import { Post } from 'api/';
+import { useMemo, useContext } from 'react';
+import { Typography } from 'antd';
+import ReactMarkdown from 'react-markdown';
 
-const ArticleContent = ({ data }: { data: Post }) => {
-  return useMemo(() => <div>detail</div>, []);
+import { StoreContext } from 'containers/Post/Detail/store';
+
+const { Title } = Typography;
+
+const ArticleContent = () => {
+  const { state } = useContext(StoreContext);
+
+  return useMemo(
+    () => (
+      <Typography>
+        <Title>{state?.title}</Title>
+        {state?.content && <ReactMarkdown>{state.content}</ReactMarkdown>}
+      </Typography>
+    ),
+    [state]
+  );
 };
 
 export default ArticleContent;
