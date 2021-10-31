@@ -4,7 +4,7 @@ import routes from './config';
 
 const RouteConfig = () => {
   return (
-    <Router>
+    <Router basename="/blog">
       <Switch>
         {routes.map((route, i) => (
           <RouteWithSubRoutes key={i} {...route} />
