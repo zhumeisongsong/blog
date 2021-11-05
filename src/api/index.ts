@@ -19,6 +19,10 @@ export const getPosts = () => {
         id
         title
         published_at
+        thumbnail{
+          url
+          formats
+        }
       }
     }`,
   });
@@ -35,6 +39,10 @@ export const getPost = (id: string) => {
         content
         published_at
         updated_at
+        thumbnail{
+          url
+          formats
+        }
       }
     }`,
   });

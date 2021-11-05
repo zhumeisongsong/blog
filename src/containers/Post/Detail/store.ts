@@ -1,6 +1,6 @@
 import { createContext } from 'react';
-import { Post } from 'api/';
+import { PostModel } from 'models/post';
 
-export const StoreContext = createContext<{ state: Post | null }>({
+export const StoreContext = createContext<{ state: PostModel | null }>({
   state: null,
 });
