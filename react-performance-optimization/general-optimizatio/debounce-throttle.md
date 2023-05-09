@@ -1,6 +1,7 @@
 # debounce, throttle optimization for frequently triggered callbacks
 
-In the search component, the search callback is triggered when the content in the input is modified. When the component can process the search results quickly, the user does not feel the input delay.
+In the search component, the search callback is triggered when the content in the input is modified. 
+When the component can process the search results quickly, the user does not feel the input delay.
 However, in the actual scenario, the list page of the middle and backend application is very complex, and the component's Render on the search result will cause the page to lag, which obviously affects the user's input experience.
 
 ## The [useDebounce](https://github.com/xnimorz/use-debounce#simple-values-debouncing) + useEffect approach is generally used in search scenarios to get data.
