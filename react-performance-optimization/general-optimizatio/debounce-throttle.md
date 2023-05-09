@@ -44,6 +44,6 @@ debounce is more suitable to be used in the `search scenario`, which only needs 
 And throttle is more suitable for scenarios that require real-time response to the user:
 - resizing by dragging and dropping
 - zooming in and out by dragging and dropping 
-- e.g., window's resize event
+- e.g. window's resize event...
 
 In the scenario of real time user response, if the callback time is small, you can even use `requestAnimationFrame` instead of throttle.
