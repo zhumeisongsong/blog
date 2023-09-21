@@ -2,7 +2,7 @@
 
 ### General Optimization
 
-- [cache optimization](./react-performance-optimization/general-optimizatio/04-cache-optimization.md)
+- [cache optimization](./react-performance-optimization/general-optimization/04-cache-optimization.md)
 
 - [debounce, throttle optimization for frequently triggered callbacks
-](./react-performance-optimization/general-optimizatio/05-debounce-throttle.md)
+](./react-performance-optimization/general-optimization/05-debounce-throttle.md)
