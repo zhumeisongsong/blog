@@ -6,3 +6,12 @@
 
 - [debounce, throttle optimization for frequently triggered callbacks
 ](./react-performance-optimization/general-optimization/05-debounce-throttle.md)
+
+### Clean Architecture
+
+#### Part 6
+
+[Chap30. THE DATABASE IS A DETAIL](./clean-architecture/part6-chap30.md)
+
+
+### Clean Code
