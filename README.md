@@ -12,6 +12,7 @@
 #### Part 6
 
 [Chap30. THE DATABASE IS A DETAIL](./clean-architecture/part6-chap30.md)
+[Chap33. CASE STUDY: VIDEO SALES](./clean-architecture/part6-chap33.md)
 
 
 ### Clean Code
