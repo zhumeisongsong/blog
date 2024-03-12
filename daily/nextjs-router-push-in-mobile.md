@@ -1,3 +1,3 @@
-About nextjs
+# Router Push of Next.js
 
-router.push will add a history event you only push query params in cellphone browser.
+In cellphone browser, `router.push` will add a route history if you only push query params. It means back step +1.

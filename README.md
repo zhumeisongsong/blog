@@ -2,12 +2,12 @@
 
 ### General Optimization
 
-- [cache optimization](./react-performance-optimization/general-optimization/04-cache-optimization.md)
+[Cache optimization](./react-performance-optimization/general-optimization/04-cache-optimization.md)
 
-- [debounce, throttle optimization for frequently triggered callbacks
+[Debounce, throttle optimization for frequently triggered callbacks
 ](./react-performance-optimization/general-optimization/05-debounce-throttle.md)
 
-### Clean Architecture
+## Clean Architecture
 
 #### Part 6
 
@@ -16,4 +16,10 @@
 [Chap33. CASE STUDY: VIDEO SALES](./clean-architecture/part6-chap33.md)
 
 
-### Clean Code
+## Clean Code
+
+
+## Daily
+[Nextjs: router.push issue](./daily/nextjs-router-push-in-mobile.md)
+
+[Typescript: type vs interface](./daily/type-vs-interface.md)
