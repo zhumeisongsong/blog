@@ -1,7 +1,5 @@
 # Chap33. CASE STUDY: VIDEO SALES
 
-![Alt text](image.png)
-
 Now it’s time to put these rules and thoughts about architecture together into a case study. This case study will be short and simple, yet will depict both the process a good architect uses and the decisions that such an architect makes.
 
 ## THE PRODUCT
