@@ -1,6 +1,5 @@
-# Chap12. COMPONENT COHESION
-
-The three principles of component cohesion are:
+# Chap13. COMPONENT COHESION
+Which classes belong in which components? The three principles of component cohesion are:
 
 ## REP: The Reuse/Release Equivalence Principle
 
