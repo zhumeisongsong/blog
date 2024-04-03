@@ -23,5 +23,16 @@ This is perfectly fine code, but it's slightly less optimal. The reason is to do
 
 ### When two interfaces with the same name are declared in the same scope, they merge their declarations
 
-I recommend you add ESLint to your project and turn on the no-redeclare rule.
+We could add ESLint to your project and turn on the no-redeclare rule.
+
+nx:
+````
+  {
+      files: ['*.ts', '*.tsx'],
+      extends: ['plugin:@nx/typescript'],
+      rules: {
+        'no-redeclare': 'error',
+      },
+    },
+````
  
