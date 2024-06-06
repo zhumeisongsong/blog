@@ -5,11 +5,13 @@
 ### Part 2
 
 ### Part 3 DESIGN PRINCIPLES
+
 [DESIGN PRINCIPLES](./part3.md)
 
 ### Part 4 COMPONENT PRINCIPLES
 
 [Chap13. THE DATABASE IS A DETAIL](./part4-chap13-component-cohesion.md)
+
 [Chap.14 COMPONENT COUPLING](./part4-chap14-component-coupling.md)
 
 ### Part 5
