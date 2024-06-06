@@ -24,5 +24,4 @@ https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra
 
 [Cache optimization](./react-performance-optimization/general-optimization/04-cache-optimization.md)
 
-[Debounce, throttle optimization for frequently triggered callbacks
-](./react-performance-optimization/general-optimization/05-debounce-throttle.md)
+[Debounce, throttle optimization for frequently triggered callbacks](./react-performance-optimization/general-optimization/05-debounce-throttle.md)
