@@ -18,6 +18,10 @@ https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra
 
 [Typescript: type vs interface](./daily/type-vs-interface.md)
 
+[Event-driven Architecture](./daily/event-driven-architecture.md)
+
+[Command Query Responsibility Segregation](./daily/command-query-responsibility-segregation.md)
+
 ## React Performance Optimization
 
 ### General Optimization
