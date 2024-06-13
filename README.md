@@ -13,6 +13,7 @@
 https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra
 
 ## Daily
+[When bad](./daily/when-bad.md)
 
 [Nextjs: router.push issue](./daily/nextjs-router-push-in-mobile.md)
 
