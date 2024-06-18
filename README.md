@@ -10,7 +10,7 @@
 
 [Book: Clean Craftsmanship]()
 
-https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra
+[Book: The Art of Linear Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
 
 ## Daily
 [When bad](./daily/when-bad.md)
