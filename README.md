@@ -13,6 +13,8 @@
 [Book: The Art of Linear Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
 
 ## Daily
+[Time and space quiz game](./daily/time-and-space-quiz-game.md)
+
 [When bad](./daily/when-bad.md)
 
 [Nextjs: router.push issue](./daily/nextjs-router-push-in-mobile.md)
