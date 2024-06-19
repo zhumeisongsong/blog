@@ -13,9 +13,9 @@
 [Book: The Art of Linear Algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
 
 ## Daily
-[Time and Space Quiz Game](./daily/time-and-space-quiz-game.md)
+[🌱 Time and Space Quiz Game](./daily/time-and-space-quiz-game.md)
 
-[When Bad](./daily/when-bad.md)
+[🌻 When Bad](./daily/when-bad.md)
 
 [Nextjs: router.push issue](./daily/nextjs-router-push-in-mobile.md)
 
