@@ -8,3 +8,5 @@ Refactoring: Periodically refactoring to simplify complex logic or integrate new
 
 Error Handling: The way errors are handled and displayed is clear, but consider centralizing error handling if similar patterns are used across different components.
 
+Recursion is the root of computation since it trades description for time. - Alan Perlis
+
