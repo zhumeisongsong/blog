@@ -3,10 +3,8 @@
  */
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
 const assetPrefix = isGithubActions ? `/blog/` : "";
-const basePath = isGithubActions ? `/blog` : "";
 
 const nextConfig = {
-  basePath,
   assetPrefix,
   output: "export",
 
