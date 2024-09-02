@@ -48,33 +48,8 @@ jobs:
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-            cd .
-            echo "STORE_PATH=$(pnpm store path)" >> "$GITHUB_OUTPUT"
-      - name: Restore pnpm store
-        uses: actions/cache@v4
-        env:
-          cache-name: pnpm-store-cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ env.cache-name }}-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-
-      - name: Cache pnpm store
-        id: cache-pnpm-store
-        uses: actions/cache@v4
-        env:
-            cache-name: pnpm-store-cache
-        with:
-            path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-            key: ${{ env.cache-name }}-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-            restore-keys: |
-              ${{ env.cache-name }}-${{ runner.os }}-
       - name: Install dependencies
-        if: ${{ steps.cache-pnpm-store.outputs.cache-hit == 'false' }}
-        run: pnpm install --frozen-lockfile
+        uses: zhumeisongsong/shared-actions/.github/actions/pnpm/action.yml@main
 
       - name: Build with Next.js
         run: pnpm next build
