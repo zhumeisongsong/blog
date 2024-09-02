@@ -25,16 +25,19 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  setup:
+    uses: zhumeisongsong/shared-actions/.github/workflows/pnpm-setup.yml@main
+
   # Build job
   build:
+    name: Build
+    needs: setup
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          fetch-depth: 0
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -43,8 +46,6 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
-      - name: Install dependencies
-        run: pnpm install
       - name: Build with Next.js
         run: pnpm next build
       - name: Upload artifact
