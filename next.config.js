@@ -9,8 +9,8 @@ const assetPrefix = isGithubActions ? `/${repo}/` : "";
 const basePath = isGithubActions ? `/${repo}` : "";
 
 const nextConfig = {
-  basePath,
-  assetPrefix,
+  // basePath,
+  // assetPrefix,
   output: "export",
 
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
