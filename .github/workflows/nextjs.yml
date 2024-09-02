@@ -49,7 +49,7 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        uses: zhumeisongsong/shared-actions/.github/actions/pnpm/action.yml@main
+        uses: zhumeisongsong/shared-actions/.github/actions/pnpm@main
 
       - name: Build with Next.js
         run: pnpm next build
