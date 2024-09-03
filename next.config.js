@@ -4,7 +4,6 @@
 
 const nextConfig = {
   output: "export",
-  assetPrefix: "/blog",
 };
 
 module.exports = nextConfig;
