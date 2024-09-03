@@ -1,6 +1,4 @@
-import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 
@@ -9,7 +7,6 @@ type Props = {
   coverImage: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
 };
 
@@ -18,7 +15,6 @@ export function PostPreview({
   coverImage,
   date,
   excerpt,
-  author,
   slug,
 }: Props) {
   return (
