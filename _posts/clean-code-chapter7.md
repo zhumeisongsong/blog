@@ -1,10 +1,10 @@
 ---
 title: "Clean Code Chapter 7: Error Handling"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/cc-7-cover.jpg"
 date: "2017-04-20"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/cc-7-cover.jpg"
 ---
 
 Error handling is just one of those things that we all have to do when we program. Input can be abnormal and devices can fail. In short, things can go wrong, and when they do, we as programmers are responsible for making sure that our code does what it needs to do.

@@ -1,10 +1,10 @@
 ---
 title: "Clean Architecture Part6. Chap30. THE DATABASE IS A DETAIL"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/ca-30-cover.jpg"
 date: "2018-11-26"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/ca-30-cover.jpg"
 ---
 
 From an architectural point of view, the database is a non-entity—it is a detail that does not rise to the level of an architectural element. Its relationship to the architecture of a software system is rather like the relationship of `a doorknob to the architecture of your home`.

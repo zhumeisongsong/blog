@@ -1,10 +1,10 @@
 ---
 title: "Type vs Interface"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/type-interface-cover.jpg"
 date: "2021-06-10"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/type-interface-cover.jpg"
 ---
 
 | TH | when to use | limit | TH | TH |

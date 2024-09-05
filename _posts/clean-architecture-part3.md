@@ -1,10 +1,10 @@
 ---
 title: "Clean Architecture Part3. DESIGN PRINCIPLES"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/ca-3-cover.jpg"
 date: "2018-05-05"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/ca-3-cover.jpg"
 ---
 
 - SRP: The `Single Responsibility Principle` An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.

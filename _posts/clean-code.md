@@ -1,10 +1,10 @@
 ---
 title: "Clean Code Index"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/clean-code-cover.jpg"
 date: "2018-01-24"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/clean-code-cover.jpg"
 ---
 
 [Chapter 1: Clean Code](/blog/posts/clean-code-capter1)

@@ -1,10 +1,10 @@
 ---
-title: Clean Architecture Index"
+title: Clean Architecture Index
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/clean-architecture-cover.jpg"
 date: "2018-12-25"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/clean-architecture-cover.jpg"
 ---
 
 ### Part 1

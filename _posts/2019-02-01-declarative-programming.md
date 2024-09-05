@@ -1,10 +1,10 @@
 ---
 title: "Why I Recommend Declarative Programming"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/declarative-programming-cover.jpg"
 date: "2019-02-01"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/declarative-programming-cover.jpg"
 ---
 
 ### Imperative Programming vs Declarative Programming
