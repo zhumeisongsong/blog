@@ -1,10 +1,10 @@
 ---
 title: "TimeTravels: Time and Space Quiz Game"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/quiz-game-cover.jpg"
 date: "2024-07-09"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/quiz-game-cover.jpg"
 ---
 
 This business plan integrates competitive points and focuses on leveraging AI for dynamic content, a unique interactive interface, and comprehensive user engagement strategies.

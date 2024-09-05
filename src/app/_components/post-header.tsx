@@ -12,7 +12,13 @@ export function PostHeader({ title, coverImage, date }: Props) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      <div
+        className="mb-8 md:mb-16 sm:mx-0"
+        style={{
+          height: "48vh",
+          overflow: "hidden",
+        }}
+      >
         <CoverImage title={title} src={coverImage} />
       </div>
       <div className="max-w-2xl mx-auto">
