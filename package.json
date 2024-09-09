@@ -4,7 +4,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
     "classnames": "^2.5.1",
