@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./switch.module.css";
-import { memo, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 declare global {
   var updateDOM: () => void;
@@ -61,7 +61,7 @@ const Switch = () => {
     () =>
       ((typeof localStorage !== "undefined" &&
         localStorage.getItem(STORAGE_KEY)) ??
-        "light") as ColorSchemePreference,
+        "light") as ColorSchemePreference
   );
 
   useEffect(() => {
@@ -92,16 +92,18 @@ const Switch = () => {
   );
 };
 
-const Script = memo(() => (
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `(${NoFOUCScript.toString()})('${STORAGE_KEY}')`,
-    }}
-  />
-));
+const Script = () => {
+  return (
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `(${NoFOUCScript.toString()})("${STORAGE_KEY}")`,
+      }}
+    />
+  );
+};
 
 /**
- * This component wich applies classes and transitions.
+ * This component which applies classes and transitions.
  */
 export const ThemeSwitcher = () => {
   return (
