@@ -32,39 +32,14 @@ jobs:
     needs: setup
     uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-lint.yml@main
   
-  
   type-check:
     needs: setup
     uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-type-check.yml@main
 
   build:
-    name: Build
     needs: [lint, type-check]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Restore pnpm store and install dependencies
-        uses: zhumeisongsong/shared-actions/.github/actions/pnpm@main
-
-      - name: Build with Next.js
-        run: pnpm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
+    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-build-github-pages.yml@main
 
   deploy:
-    name: Deploy
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-deploy-github-pages.yml@main
