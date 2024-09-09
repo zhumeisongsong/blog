@@ -34,20 +34,8 @@ jobs:
   
   
   type-check:
-    name: Type check
-    runs-on: ubuntu-latest
     needs: setup
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Restore pnpm store and install dependencies
-        uses: zhumeisongsong/shared-actions/.github/actions/pnpm@main
-
-      - name: Type check with TypeScript
-        run: pnpm run type-check
+    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-type-check.yml@main
 
   build:
     name: Build
