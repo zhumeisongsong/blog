@@ -7,11 +7,15 @@ ogImage:
   url: "/blog/assets/type-interface-cover.jpg"
 ---
 
-| TH | when to use | limit | TH | TH |
-| ---- | ---- | ---- | ---- | ---- |
-| type | use it by default | no | TD | TD |
-| interface | need to use `extends`; working with objects that `inherit` from each other;| can't express unions, mapped types, or conditional type; Interfaces with the same name in the same scope merge their declarations, leading to unexpected bugs; | TD | TD |
+### Type
 
+**When to use**: use it by default.
+
+### Interface
+
+**When to use**: need to use `extends`; working with objects that `inherit` from each other.
+
+**Limit**: can't express unions, mapped types, or conditional type; interfaces with the same name in the same scope merge their declarations, leading to unexpected bugs.
 
 ### TypeScript performance wiki recommends using interfaces for object inheritance.
 
