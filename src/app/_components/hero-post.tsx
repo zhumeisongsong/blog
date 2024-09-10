@@ -19,8 +19,8 @@ export function HeroPost({
 }: Props) {
   return (
     <section>
-      <div className="mb-8 md:mb-16" style={{
-        height: '48vh',
+      <div className="mb-8 md:mb-8" style={{
+        height: '52vh',
         overflow: 'hidden',
       }}>
         <CoverImage title={title} src={coverImage} slug={slug} />

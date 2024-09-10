@@ -29,9 +29,7 @@
 }
 
 [data-mode="light"] .switch {
-  box-shadow: 0 0 50px 10px yellow;
-  background-color: yellow;
-  border: 1px solid orangered;
+  background-color: rgb(255, 200, 0);
 }
 
 [data-mode="dark"] .switch {

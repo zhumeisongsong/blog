@@ -20,7 +20,8 @@ export function PostPreview({
   return (
     <div>
       <div className="mb-5"  style={{
-        height: '30vh',
+        height: "18vw",
+        minHeight: '160px',
         overflow: 'hidden',
       }}>
         <CoverImage slug={slug} title={title} src={coverImage} />
