@@ -30,11 +30,11 @@ jobs:
 
   lint:
     needs: setup
-    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-lint.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/eslint.yml@main
   
   type-check:
     needs: setup
-    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-type-check.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/ts-type-check.yml@main
 
   build:
     needs: [lint, type-check]
