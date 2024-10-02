@@ -16,5 +16,10 @@ ogImage:
 - `git push --force`
 
 ## Set local user
-- git config user.email "email@example.com"
-- git config user.name "Author Name"
+
+- `git config user.email "email@example.com"`
+- `git config user.name "Author Name"`
+
+## List author of commit
+
+`git log --pretty=format:"%h - %an <%ae>"`
