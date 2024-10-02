@@ -1,0 +1,40 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "labels": ["type: dependencies"],
+  "dependencyDashboard": true,
+  "baseBranches": ["main"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["every weekend"],
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "hostRules": [
+    {
+      "matchHost": "https://npm.pkg.github.com/",
+      "hostType": "npm",
+      "encrypted": {
+        "token": "wcFMA/xDdHCJBTolAQ/+JimCqLcuTF3coE7Exoh5Od0tDFEiodv1mQqd8ixBXi1KipR3MnvDrHls6WATS5+bQ4hM4DdV/QGgW4cRHr4iEOx8aSmWKOSnkh7fQckHOC4TMHUp5SPSx9vSPgIUhW+OaQZBf12U6c+MMRlJXc9UgDeDur2+M/wbKyC/nQ94fkbeAn8iqxYSqAEyJ1Hxkretus1xCAA9QsmnWQbRDHk2mLRs03d/KIDC1lt6U2B+BYcbhl8/kuwMs+zOepEuhY83QbEAo49R+0Dst+KBo5/pHiu9B5L/nq0+/EdaFhBf1OfC0CPMKI5LO7FnAmW+nwmzYac6l8M4MmcbsCRh1jBl4krpP/k+bVnEbopvUvphaxvOJekPsFu2YuIIU0gBZfe57pskwLPPt0C/z4ZSMzLFz0D5S9++XmFAaoziZOvuzqsbVBX46tFi5q/zpTD+cuf2LfVcOT9jt3D7u6md49RrGT2TMMe4T5lElmsucdr0bLpJUdOn0CiRm7dWSE8ZxjA3NVSxJet7hCYWyxqle8rMWSCvrQmGEKSEe5uGj9qoPPtIS1//7kXU2T4923Me4Fmuy6nUx1cwtwKNSRR1mUoYOH5OzbXoStU9gXbp94227Lw21JpAdXEJekbLVaLiwoUXL3ncEBZjRSnjl/x/XcxrCdSsOwlXbDI7fBLMb1f1ZQfSdAFmVY1FVNCQ2dZNQfinYiMixiP3x8mxurxkN5xISNKgG7GbYYLQmdTtZenOA1W+ovQaszd5nVMIcxNsJnXps7SKCfAw6FArGqNyQTMzDsdz2fXWgC7ZbHkiQ8b6FalcfqsxJCol3/peAixZAm9kuthu27cq"
+      }
+    }
+  ],
+  "npmrc": "@atrae:registry=https://npm.pkg.github.com",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "devDependencies",
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "groupName": "dependencies",
+      "automerge": true
+    }
+  ]
+}
+  
