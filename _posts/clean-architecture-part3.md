@@ -6,6 +6,10 @@ date: "2018-05-05"
 ogImage:
   url: "/blog/assets/ca-3-cover.jpg"
 ---
+Good software systems begin with `clean code`. On the one hand, if the `bricks` aren’t well made, the `architecture` of the building doesn’t matter much. On the other hand, you can make a `substantial mess` with well-made bricks. This is where the SOLID principles come in.
+
+The SOLID principles tell us `how to arrange our functions and data structures into classes`, and `how those classes should be interconnected`. The use of the word “class” does not imply that these principles are applicable only to object- oriented software. A class is simply a coupled grouping of functions and data. Every software system has such groupings, whether they are called classes or not. The SOLID principles apply to those groupings.
+
 
 - SRP: The `Single Responsibility Principle` An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.
 - OCP: The `Open-Closed Principle` Bertrand Meyer made this principle famous in the 1980s. The gist is that for software systems to be easy to change, they must be designed to allow the behavior of those systems to be changed by adding new code, rather than changing existing code.
