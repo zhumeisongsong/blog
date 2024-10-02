@@ -12,5 +12,5 @@ jobs:
   release:
     needs: setup
     uses: zhumeisongsong/shared-actions/.github/workflows/reusable-semantic-release.yml@main
-    cecrets:
+    secrets:
       REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}

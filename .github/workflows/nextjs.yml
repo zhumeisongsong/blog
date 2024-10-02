@@ -26,20 +26,20 @@ concurrency:
 
 jobs:
   setup:
-    uses: zhumeisongsong/shared-actions/.github/workflows/pnpm-setup.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-pnpm-setup.yml@main
 
   lint:
     needs: setup
-    uses: zhumeisongsong/shared-actions/.github/workflows/eslint.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-eslint.yml@main
   
   type-check:
     needs: setup
-    uses: zhumeisongsong/shared-actions/.github/workflows/ts-type-check.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-ts-type-check.yml@main
 
   build:
     needs: [lint, type-check]
-    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-build-github-pages.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-build-github-pages.yml@main
 
   deploy:
     needs: build
-    uses: zhumeisongsong/shared-actions/.github/workflows/nextjs-deploy-github-pages.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-deploy-github-pages.yml@main
