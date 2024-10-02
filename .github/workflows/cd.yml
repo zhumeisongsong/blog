@@ -1,0 +1,16 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-pnpm-setup.yml@main
+
+  release:
+    needs: setup
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-semantic-release.yml@main
+    cecrets:
+      REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
