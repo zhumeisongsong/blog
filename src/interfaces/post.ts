@@ -9,4 +9,5 @@ export type Post = {
   };
   content: string;
   preview?: boolean;
+  categories?: string[];
 };
