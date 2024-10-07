@@ -32,4 +32,8 @@
   margin-left: 32px;
 }
 
+.markdown code {
+  @apply bg-orange-200 text-black;
+}
+
 
