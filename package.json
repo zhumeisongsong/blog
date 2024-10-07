@@ -12,6 +12,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",
+    "dompurify": "^3.1.7",
     "gray-matter": "^4.0.3",
     "mermaid": "^11.3.0",
     "next": "latest",
@@ -22,6 +23,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/node": "^20.14.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

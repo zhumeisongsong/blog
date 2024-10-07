@@ -1,6 +1,7 @@
 "use client";
 import markdownToHtml from "@/lib/markdown-to-html";
 import { useEffect, useState } from "react";
+import DOMPurify from 'dompurify';
 
 import markdownStyles from "./markdown-styles.module.css";
 
@@ -19,7 +20,7 @@ export function BodyMarkdown({ content }: Props) {
   return (
     <div
       className={markdownStyles["markdown"]}
-      dangerouslySetInnerHTML={{ __html: html }}
+      dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(html) }}
     />
   );
 }
