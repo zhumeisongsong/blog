@@ -6,13 +6,26 @@ type Props = {
   content: string;
 };
 
+const isMermaidGraph = (content: string) => {
+  const mermaidKeywords = [
+    "graph",
+    "flowchart",
+    "sequenceDiagram",
+    "classDiagram",
+    "stateDiagram",
+    "erDiagram",
+    "journey",
+  ];
+  return mermaidKeywords.some((keyword) => content.trim().startsWith(keyword));
+};
+
 export function PostBody({ content }: Props) {
   const array = content.split("```");
 
   return (
     <div className="max-w-2xl mx-auto">
       {array.map((item, index) => {
-        if (item.indexOf("graph") > -1) {
+        if (isMermaidGraph(item)) {
           return <BodyMermaid key={index} graph={item} />;
         }
         return <BodyMarkdown key={index} content={item} />;
