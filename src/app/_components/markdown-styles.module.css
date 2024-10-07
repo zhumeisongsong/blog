@@ -27,3 +27,9 @@
   @apply text-sky-500 underline;
 }
 
+.markdown ul {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+

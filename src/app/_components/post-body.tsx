@@ -1,43 +1,21 @@
 "use client";
-
-import { useEffect, useRef } from "react";
-import mermaid from "mermaid";
-import markdownStyles from "./markdown-styles.module.css";
+import { BodyMarkdown } from "@/app/_components/body-markdown";
+import { BodyMermaid } from "@/app/_components/body-mermaid";
 
 type Props = {
   content: string;
 };
 
 export function PostBody({ content }: Props) {
-  const chartRef = useRef(null);
   const array = content.split("```");
-
-  useEffect(() => {
-    array.map((item, index) => {
-      if (item.indexOf("graph") > -1 && chartRef.current) {
-        console.log(item);
-        mermaid.contentLoaded(); // Rerenders any existing mermaid diagrams
-      }
-    });
-  }, [array]);
 
   return (
     <div className="max-w-2xl mx-auto">
       {array.map((item, index) => {
         if (item.indexOf("graph") > -1) {
-          return (
-            <div ref={chartRef} key={index} className="mermaid">
-              {item}
-            </div>
-          );
+          return <BodyMermaid key={index} graph={item} />;
         }
-        return (
-          <div
-            key={index}
-            className={markdownStyles["markdown"]}
-            dangerouslySetInnerHTML={{ __html: item }}
-          />
-        );
+        return <BodyMarkdown key={index} content={item} />;
       })}
     </div>
   );
