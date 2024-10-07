@@ -9,13 +9,23 @@ type Props = {
 };
 
 export function BodyMermaid({ graph }: Props) {
-  const chartRef = useRef(null);
+  const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (chartRef.current) {
-      mermaid.contentLoaded(); // Rerenders any existing mermaid diagrams
+      try {
+        mermaid.contentLoaded();
+      } catch (error) {
+        console.error("Error rendering mermaid diagram:", error);
+        // Optionally, you could set an error state here and render an error message
+      }
     }
   }, [graph]);
+
+  // Basic validation
+  if (!graph || typeof graph !== "string") {
+    return <div>Invalid graph data</div>;
+  }
 
   return (
     <div ref={chartRef} className={mermaidStyles["mermaid"]}>
