@@ -16,4 +16,7 @@ jobs:
   type-check:
     needs: setup
     uses: zhumeisongsong/shared-actions/.github/workflows/reusable-ts-type-check.yml@main
-  
+
+  build:
+    needs: [lint, type-check]
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-build.yml@main
