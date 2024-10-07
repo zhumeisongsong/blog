@@ -23,7 +23,7 @@
     {
       "matchDepTypes": ["dependencies"],
       "groupName": "dependencies",
-      "automerge": true
+      "automerge": false
     }
   ]
 }
