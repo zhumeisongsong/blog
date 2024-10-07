@@ -1,6 +1,7 @@
 "use client";
 import { BodyMarkdown } from "@/app/_components/body-markdown";
 import { BodyMermaid } from "@/app/_components/body-mermaid";
+import { useEffect, useState } from "react";
 
 type Props = {
   content: string;
@@ -20,7 +21,13 @@ const isMermaidGraph = (content: string) => {
 };
 
 export function PostBody({ content }: Props) {
-  const array = content.split("```");
+  const [array, setArray] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (content) {
+      setArray(content.split("```"));
+    }
+  }, [content, setArray]);
 
   return (
     <div className="max-w-2xl mx-auto">
