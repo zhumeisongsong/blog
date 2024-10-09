@@ -2,14 +2,15 @@ import Container from "@/app/_components/container";
 import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
 import { Posts } from "@/app/_components/posts";
-import { getAllPosts } from "@/lib/api";
+import { getPinnedPosts } from "@/lib/api";
+import Link from "next/link";
 
 export default function Index() {
-  const allPosts = getAllPosts();
+  const pinnedPosts = getPinnedPosts();
 
-  const heroPost = allPosts[0];
+  const heroPost = pinnedPosts[0];
 
-  const morePosts = allPosts.slice(1);
+  const morePosts = pinnedPosts.slice(1);
 
   return (
     <main>
@@ -22,14 +23,12 @@ export default function Index() {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
-        {morePosts.length > 0 && (
-          <>
-            <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-              More Stories
-            </h2>
-            <Posts posts={morePosts} />
-          </>
-        )}
+        {pinnedPosts.length > 0 && <Posts posts={morePosts} />}
+        <div className="mb-8 text-center">
+          <Link href="/posts" className="hover:underline">
+            {">"} All Stories {"<"}
+          </Link>
+        </div>
       </Container>
     </main>
   );
