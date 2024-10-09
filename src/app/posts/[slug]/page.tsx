@@ -22,6 +22,7 @@ export default async function Post({ params }: Params) {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
+            categories={post.categories}
           />
           <PostBody content={post.content} />
         </article>

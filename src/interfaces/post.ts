@@ -1,3 +1,5 @@
+import { type Category } from "./categories";
+
 export type Post = {
   slug: string;
   title: string;
@@ -9,5 +11,5 @@ export type Post = {
   };
   content: string;
   preview?: boolean;
-  categories?: string[];
+  categories?: Category[];
 };

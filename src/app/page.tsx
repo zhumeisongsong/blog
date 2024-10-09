@@ -1,7 +1,7 @@
 import Container from "@/app/_components/container";
 import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
+import { Posts } from "@/app/_components/posts";
 import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
@@ -22,7 +22,14 @@ export default function Index() {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {morePosts.length > 0 && (
+          <>
+            <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+              More Stories
+            </h2>
+            <Posts posts={morePosts} />
+          </>
+        )}
       </Container>
     </main>
   );

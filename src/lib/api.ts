@@ -1,3 +1,4 @@
+import { type Category } from "@/interfaces/categories";
 import { Post } from "@/interfaces/post";
 import fs from "fs";
 import matter from "gray-matter";
@@ -24,5 +25,12 @@ export function getAllPosts(): Post[] {
     .map((slug) => getPostBySlug(slug))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
   return posts;
+}
+
+export function getPostsByCategory(category: Category): Post[] {
+  const allPosts = getAllPosts();
+
+  return allPosts.filter((post) => post.categories?.includes(category));
 }
