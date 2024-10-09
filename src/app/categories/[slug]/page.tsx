@@ -1,3 +1,4 @@
+import AllCategories from "@/app/_components/all-categories";
 import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { Posts } from "@/app/_components/posts";
@@ -15,11 +16,12 @@ export default async function FilteredPosts({ params }: Params) {
   return (
     <main>
       <Container>
-      <Header />
-        <h2 className="mb-8 text-3xl md:text-6xl font-bold tracking-tighter leading-tight">
+        <Header />
+        <h2 className="mb-8 text-xl md:text-4xl font-bold tracking-tighter leading-tight">
           #{params.slug}
         </h2>
         {filteredPosts.length > 0 && <Posts posts={filteredPosts} />}
+        <AllCategories />
       </Container>
     </main>
   );
