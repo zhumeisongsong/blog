@@ -2,8 +2,6 @@
 import mermaid from "mermaid";
 import { useEffect, useRef } from "react";
 
-import mermaidStyles from "./mermaid-styles.module.css";
-
 type Props = {
   graph: string;
 };
@@ -28,8 +26,11 @@ export function BodyMermaid({ graph }: Props) {
   }
 
   return (
-    <div ref={chartRef} className={mermaidStyles["mermaid"]}>
-      <div className="mermaid">{graph}</div>
+    <div
+      ref={chartRef}
+      className="mermaid flex align-center justify-center bg-white rounded-lg p-16"
+    >
+      {graph}
     </div>
   );
 }

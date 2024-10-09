@@ -5,6 +5,7 @@ export const defaultCategories = {
   react: "react",
   project: "project",
   basic: "basic",
+  typescript: "typescript",
 } as const;
 
 export type Category =
