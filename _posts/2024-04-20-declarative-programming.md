@@ -2,7 +2,7 @@
 title: "Why I Recommend Declarative Programming"
 excerpt: ""
 coverImage: "/blog/assets/declarative-programming-cover.jpg"
-date: "2019-02-01"
+date: "2024-04-20"
 ogImage:
   url: "/blog/assets/declarative-programming-cover.jpg"
 categories: ['basic']

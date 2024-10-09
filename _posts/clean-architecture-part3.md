@@ -1,12 +1,16 @@
 ---
-title: "Clean Architecture Part3. DESIGN PRINCIPLES"
+title: "Clean Architecture Part3. Design Principles"
 excerpt: ""
 coverImage: "/blog/assets/ca-3-cover.jpg"
 date: "2018-05-05"
 ogImage:
   url: "/blog/assets/ca-3-cover.jpg"
+categories: ['clean', 'solid']
+pin: true
 ---
-Good software systems begin with `clean code`. On the one hand, if the `bricks` aren’t well made, the `architecture` of the building doesn’t matter much. On the other hand, you can make a `substantial mess` with well-made bricks. This is where the SOLID principles come in.
+Good software systems begin with `clean code`. 
+On the one hand, if the `bricks` aren’t well made, the `architecture` of the building doesn’t matter much. 
+On the other hand, you can make a `substantial mess` with well-made bricks. This is where the `SOLID` principles come in.
 
 The SOLID principles tell us `how to arrange our functions and data structures into classes`, and `how those classes should be interconnected`. The use of the word “class” does not imply that these principles are applicable only to object- oriented software. A class is simply a coupled grouping of functions and data. Every software system has such groupings, whether they are called classes or not. The SOLID principles apply to those groupings.
 

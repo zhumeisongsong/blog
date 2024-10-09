@@ -6,6 +6,8 @@ export const defaultCategories = {
   project: "project",
   basic: "basic",
   typescript: "typescript",
+  "gas-station": "gas-station",
+  solid: "solid",
 } as const;
 
 export type Category =

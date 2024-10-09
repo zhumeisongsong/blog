@@ -1,10 +1,10 @@
 ---
 title: "Git Command"
 excerpt: ""
-coverImage: "/blog/assets/declarative-programming-cover.jpg"
+coverImage: "/blog/assets/git-cover.jpg"
 date: "2016-10-08"
 ogImage:
-  url: "/blog/assets/declarative-programming-cover.jpg"
+  url: "/blog/assets/git-cover.jpg"
 categories: ['git']
 pin: true
 ---

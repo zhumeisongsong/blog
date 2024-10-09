@@ -1,12 +1,11 @@
 ---
-title: "Clean Architecture Part4. Chap13. COMPONENT COHESION"
+title: "Clean Architecture Part4. Chap13. Component Cohesion"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
 date: "2018-08-24"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 categories: ["clean"]
-pin: true
 ---
 
 Which classes belong in which components? The three principles of component cohesion are:

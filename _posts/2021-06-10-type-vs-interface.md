@@ -23,7 +23,7 @@ ogImage:
 type WithId = {
   id: string;
 };
- 
+
 type User = WithId & {
   name: string;
 };
@@ -36,13 +36,13 @@ This is perfectly fine code, but it's slightly less optimal. The reason is to do
 We could add ESLint to your project and turn on the no-redeclare rule.
 
 nx:
-````
+
+```
   {
       files: ['*.ts', '*.tsx'],
       extends: ['plugin:@nx/typescript'],
       rules: {
         'no-redeclare': 'error',
       },
-    },
-````
- 
+  }
+```

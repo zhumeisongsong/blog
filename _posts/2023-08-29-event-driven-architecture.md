@@ -2,7 +2,7 @@
 title: "Event-driven Architecture"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
-date: "2022-03-30"
+date: "2023-08-29"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 ---

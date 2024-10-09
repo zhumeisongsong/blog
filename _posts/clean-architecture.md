@@ -6,7 +6,6 @@ date: "2018-12-25"
 ogImage:
   url: "/blog/assets/clean-architecture-cover.jpg"
 categories: ['clean']
-pin: true
 ---
 
 ### Part 1

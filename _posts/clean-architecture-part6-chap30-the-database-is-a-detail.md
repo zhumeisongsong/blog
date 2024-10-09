@@ -1,5 +1,5 @@
 ---
-title: "Clean Architecture Part6. Chap30. THE DATABASE IS A DETAIL"
+title: "Clean Architecture Part6. Chap30. The Database is a Detail"
 excerpt: ""
 coverImage: "/blog/assets/ca-30-cover.jpg"
 date: "2018-11-26"

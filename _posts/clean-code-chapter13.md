@@ -1,13 +1,11 @@
 ---
-title: "Clean Code Chapter 13: Concurrency 并发编程"
+title: "Clean Code Chapter 13: Concurrency"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
 date: "2017-08-20"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 ---
-
-对象是过程的抽象，线程是调度的抽象。
 
 ## 为什么要并发
 

@@ -1,10 +1,10 @@
 ---
 title: "React Performance Optimization: Debounce, Throttle Optimization for Frequently Triggered Callbacks"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/debounce-throttle-cover.jpg"
 date: "2020-07-01"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/debounce-throttle-cover.jpg"
 categories: ['react']
 pin: true
 ---
