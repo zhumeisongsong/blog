@@ -4,6 +4,7 @@ import { Intro } from "@/app/_components/intro";
 import { Posts } from "@/app/_components/posts";
 import { getPinnedPosts } from "@/lib/api";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function Index() {
   const pinnedPosts = getPinnedPosts();
@@ -11,6 +12,10 @@ export default function Index() {
   const heroPost = pinnedPosts[0];
 
   const morePosts = pinnedPosts.slice(1);
+
+  if (!pinnedPosts) {
+    return notFound();
+  }
 
   return (
     <main>
