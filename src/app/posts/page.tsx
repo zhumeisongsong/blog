@@ -1,7 +1,7 @@
 import Container from "@/app/_components/container";
-import { Intro } from "@/app/_components/intro";
 import { Posts } from "@/app/_components/posts";
 import { getAllPosts } from "@/lib/api";
+import Header from "../_components/header";
 
 export default function AllPosts() {
   const allPosts = getAllPosts();
@@ -9,7 +9,7 @@ export default function AllPosts() {
   return (
     <main>
       <Container>
-        <Intro />
+        <Header />
         {allPosts.length > 0 && (
           <>
             <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
