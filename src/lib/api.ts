@@ -34,3 +34,9 @@ export function getPostsByCategory(category: Category): Post[] {
 
   return allPosts.filter((post) => post.categories?.includes(category));
 }
+
+export function getPinnedPosts(): Post[] {
+  const allPosts = getAllPosts();
+
+  return allPosts.filter((post) => post.pin);
+}
