@@ -2,7 +2,7 @@ import Link from "next/link";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import { PostTitle } from "@/app/_components/post-title";
-import { type Category, defaultCategories } from "@/interfaces/categories";
+import { type Category } from "@/interfaces/categories";
 
 type Props = {
   title: string;
@@ -33,11 +33,11 @@ export function PostHeader({ title, coverImage, date, categories }: Props) {
           categories.length > 0 &&
           categories.map((category: Category) => (
             <Link
-              href={`/categories/${defaultCategories[category]}`}
+              href={`/categories/${category}`}
               key={category}
               className="text-md mr-2 text-gray-500 hover:underline"
             >
-              #{defaultCategories[category]}
+              #{category}
             </Link>
           ))}
       </div>
