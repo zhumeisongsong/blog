@@ -5,6 +5,8 @@ coverImage: "/blog/assets/declarative-programming-cover.jpg"
 date: "2018-09-11"
 ogImage:
   url: "/blog/assets/declarative-programming-cover.jpg"
+categories: ['git']
+pin: true
 ---
 
 ## Rebase to change the commit content like author etc.

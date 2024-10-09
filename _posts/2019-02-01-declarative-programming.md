@@ -5,6 +5,8 @@ coverImage: "/blog/assets/declarative-programming-cover.jpg"
 date: "2019-02-01"
 ogImage:
   url: "/blog/assets/declarative-programming-cover.jpg"
+categories: ['basic']
+pin: true
 ---
 
 ### Imperative Programming vs Declarative Programming

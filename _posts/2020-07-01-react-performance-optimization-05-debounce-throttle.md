@@ -5,6 +5,8 @@ coverImage: "/blog/assets/hello-world/cover.jpg"
 date: "2020-07-01"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
+categories: ['react']
+pin: true
 ---
 
 In the search component, the search callback is triggered when the content in the input is modified.
