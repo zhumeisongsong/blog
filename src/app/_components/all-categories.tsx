@@ -8,7 +8,7 @@ const AllCategories = () => {
         All Categories
       </h2>
       {Object.keys(defaultCategories).map((key) => (
-        <h2 className="mb-8 text-xl md:text-4xl font-bold tracking-tighter leading-tight">
+        <h2 className="mb-8 text-xl md:text-4xl font-bold tracking-tighter leading-tight" key={key}>
           <Link href={`/categories/${key}`}># {key}</Link>
         </h2>
       ))}
