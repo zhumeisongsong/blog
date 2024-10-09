@@ -2,9 +2,14 @@ import Container from "@/app/_components/container";
 import { Intro } from "@/app/_components/intro";
 import { Posts } from "@/app/_components/posts";
 import { getAllPosts } from "@/lib/api";
+import { notFound } from "next/navigation";
 
 export default function AllPosts() {
   const allPosts = getAllPosts();
+
+  if (!allPosts) {
+    return notFound();
+  }
 
   return (
     <main>
