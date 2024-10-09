@@ -1,19 +1,22 @@
+import Link from "next/link";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import { PostTitle } from "@/app/_components/post-title";
+import { type Category, defaultCategories } from "@/interfaces/categories";
 
 type Props = {
   title: string;
   coverImage: string;
   date: string;
+  categories?: Category[];
 };
 
-export function PostHeader({ title, coverImage, date }: Props) {
+export function PostHeader({ title, coverImage, date, categories }: Props) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
       <div
-        className="mb-8 md:mb-16 sm:mx-0"
+        className="mb-8 md:mb-8 sm:mx-0"
         style={{
           height: "48vh",
           overflow: "hidden",
@@ -25,6 +28,18 @@ export function PostHeader({ title, coverImage, date }: Props) {
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
         </div>
+
+        {categories &&
+          categories.length > 0 &&
+          categories.map((category: Category) => (
+            <Link
+              href={`/categories/${defaultCategories[category]}`}
+              key={category}
+              className="text-md mr-2 text-gray-500 hover:underline"
+            >
+              #{defaultCategories[category]}
+            </Link>
+          ))}
       </div>
     </>
   );
