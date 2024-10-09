@@ -29,10 +29,8 @@ export default function Index() {
           excerpt={heroPost.excerpt}
         />
         {pinnedPosts.length > 0 && <Posts posts={morePosts} />}
-        <div className="mb-8 text-center">
-          <Link href="/posts" className="hover:underline">
-            {">"} All Stories {"<"}
-          </Link>
+        <div className="mb-8">
+          <Link href="/posts">All Stories {'>'}</Link>
         </div>
       </Container>
     </main>
