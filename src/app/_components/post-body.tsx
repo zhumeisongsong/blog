@@ -25,7 +25,7 @@ export function PostBody({ content }: Props) {
 
   useEffect(() => {
     if (content) {
-      setArray(content.split("```"));
+      setArray(content.split("<!-- mermaid -->"));
     }
   }, [content, setArray]);
 
