@@ -35,7 +35,7 @@ export function PostHeader({ title, coverImage, date, categories }: Props) {
             <Link
               href={`/categories/${category}`}
               key={category}
-              className="text-md mr-2 text-blue-700 dark:text-blue-300"
+              className="text-md mr-2 text-sky-500"
             >
               #{category}
             </Link>
