@@ -19,10 +19,6 @@
   font-weight: bold;
 }
 
-.markdown pre {
-  @apply px-1 py-0.5 bg-slate-800 text-slate-300;
-}
-
 .markdown a {
   @apply text-sky-500 underline;
 }
@@ -34,6 +30,14 @@
 
 .markdown code {
   @apply bg-orange-200 text-black;
+}
+
+.markdown pre {
+  @apply px-4 py-8 bg-neutral-800;
+}
+
+.markdown pre code {
+  @apply bg-neutral-800 text-neutral-300;
 }
 
 

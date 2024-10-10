@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: `Song's Blog`,
   description: `A statically generated blog using Next.js and Markdown.`,
   openGraph: {
-    images: '',
+    images: "",
   },
 };
 
@@ -57,7 +57,10 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "dark:bg-neutral-900 dark:text-neutral-300")}
+        className={cn(
+          inter.className,
+          "bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-300"
+        )}
       >
         <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>

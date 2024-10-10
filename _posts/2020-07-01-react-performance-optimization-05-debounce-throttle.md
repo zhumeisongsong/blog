@@ -48,9 +48,9 @@ export default function App() {
 
 ## Why is `debounce` used in the search scenario instead of `throttle`?
 
-throttle is a special scenario of debounce, throttle gives `maxWait parameter` to debounce, see `useThrottleCallback`.
+throttle is **a special scenario** of debounce, throttle gives **maxWait parameter** to debounce, see `useThrottleCallback`.
 
-debounce is more suitable to be used in the `search scenario`, which only needs to `respond to the last input of the user`, not to the intermediate input of the user.
+debounce is more suitable to be used in the **search scenario**, which only needs to **respond to the last input of the user**, not to the intermediate input of the user.
 
 And throttle is more suitable for scenarios that require real-time response to the user:
 
