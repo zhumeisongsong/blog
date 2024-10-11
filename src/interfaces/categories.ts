@@ -8,6 +8,7 @@ export const defaultCategories = {
   typescript: "typescript",
   "gas-station": "gas-station",
   solid: "solid",
+  nextjs: "nextjs",
 } as const;
 
 export type Category =

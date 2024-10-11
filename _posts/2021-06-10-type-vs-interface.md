@@ -5,6 +5,8 @@ coverImage: "/blog/assets/type-interface-cover.jpg"
 date: "2021-06-10"
 ogImage:
   url: "/blog/assets/type-interface-cover.jpg"
+categories: ['typescript']
+pin: true
 ---
 
 ### Type
