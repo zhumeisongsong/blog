@@ -6,6 +6,7 @@ date: "2018-12-25"
 ogImage:
   url: "/blog/assets/clean-architecture-cover.jpg"
 categories: ['clean']
+pin: true
 ---
 
 ### Part 1
@@ -18,7 +19,7 @@ categories: ['clean']
 
 ### Part 4 COMPONENT PRINCIPLES
 
-[Chap13. THE DATABASE IS A DETAIL](/blog/posts/clean-architecture-part4-chap13-component-cohesion)
+[Chap13. COMPONENT COHESION](/blog/posts/clean-architecture-part4-chap13-component-cohesion)
 
 [Chap.14 COMPONENT COUPLING](/blog/posts/clean-architecture-part4-chap14-component-coupling)
 

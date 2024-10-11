@@ -2,10 +2,11 @@
 title: "Clean Code Index"
 excerpt: ""
 coverImage: "/blog/assets/clean-code-cover.jpg"
-date: "2018-01-24"
+date: "2017-04-24"
 ogImage:
   url: "/blog/assets/clean-code-cover.jpg"
 categories: ['clean']
+pin: true
 ---
 
 [Chapter 1: Clean Code](/blog/posts/clean-code-chapter1)
