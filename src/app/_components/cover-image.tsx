@@ -1,23 +1,16 @@
-import cn from "classnames";
 import Image from "next/image";
 
 type Props = {
   title: string;
   src: string;
-  slug?: string;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
-  const image = (
-    <Image
-      src={src}
-      alt={`Cover Image for ${title}`}
-      className={"shadow-sm w-full"}
-      width={1300}
-      height={630}
-    />
+const CoverImage = ({ title, src }: Props) => {
+  return (
+    <div className="sm:mx-0">
+      <Image src={src} alt={`Cover for ${title}`} width={1300} height={630}/>
+    </div>
   );
-  return <div className="sm:mx-0">{image}</div>;
 };
 
 export default CoverImage;
