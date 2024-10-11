@@ -5,6 +5,8 @@ coverImage: "/blog/assets/nextjs-push-cover.jpg"
 date: "2022-10-25"
 ogImage:
   url: "/blog/assets/nextjs-push-cover.jpg"
+categories: ["nextjs"]
+pin: true
 ---
 
 In cellphone browser, `router.push` will add a route history if you only push query params. It means back step +1.
