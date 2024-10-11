@@ -2,7 +2,7 @@
 title: "LLM Corse"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
-date: "2024-01-05"
+date: "2025-04-05"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 ---
