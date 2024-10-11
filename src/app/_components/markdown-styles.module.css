@@ -19,6 +19,11 @@
   font-weight: bold;
 }
 
+.markdown h4 {
+  @apply text-xl mt-6 mb-4 leading-snug;
+  font-weight: bold;
+}
+
 .markdown a {
   @apply text-sky-500 underline;
 }

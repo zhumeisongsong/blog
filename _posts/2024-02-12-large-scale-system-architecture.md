@@ -1,32 +1,32 @@
 ---
 title: "Large Scale System Architecture"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/large-scale-system-architecture-cover.jpg"
 date: "2024-01-05"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
+  url: "/blog/assets/large-scale-system-architecture-cover.jpg"
 categories: ["architecture"]
 pin: true
 ---
 
 ## Application Core organization
 
-### Application Layer
+### :cat2: Application Layer
 
 Contain:
 
 - **Application Services** (and their interfaces)
 - The **Ports** & **Adapters** (and ORM interfaces, search engines interfaces, messaging interfaces etc.)
 - The respective Handlers for the Commands and Queries belong when using **CQRS**
-- The triggering of Application Events which represent some outcome of a use case, side effect of a use case: 
-    - sending emails
-    - notifying a 3rd party API
-    - sending a push notification
-    - starting another use case that belongs to a different component of the application
-    - show popup layout (front-end)
-    - redirect to another page (front-end)
+- The triggering of Application Events which represent some outcome of a use case, side effect of a use case:
+  - sending emails
+  - notifying a 3rd party API
+  - sending a push notification
+  - starting another use case that belongs to a different component of the application
+  - show popup layout (front-end)
+  - redirect to another page (front-end)
 
-#### Application Services and/or Command Handlers 
+**Core Concept: Application Services and/or Command Handlers**
 
 contains:
 
@@ -39,7 +39,7 @@ The Command Handlers can be used in two different ways:
 - Contain the actual logic to perform the use case
 - Can be used as mere wiring pieces in our architecture, receiving a Command and simply triggering logic that exists in an Application Service.
 
-#### Use Cases
+**Core Concept: Use Cases**
 
 - Reusable business logics
 - Are the processes in **Application Core**
@@ -47,7 +47,7 @@ The Command Handlers can be used in two different ways:
 - Are defined in the **Application Layer**
 - Provided by DDD () and used by the Onion Architecture
 
-### Domain Layer
+### :cat2: Domain Layer
 
 contains:
 
@@ -60,11 +60,19 @@ They are:
 - Independent and completely unaware of the Application Layer
 - Independent of the business processes that trigger this domain logic
 
-#### Domain Services
+**Core Concept: Domain Services**
 
-#### Domain Model
+It could: 
 
-In the very center, depending on nothing outside it. 
+- Receiving a set of entities and performing some business logic on them
+- Some domain logic that involves different entities and it does not belong in the entities themselves
+- Can use other Domain Services and Domain Model objects
+- Reusable in multiple Application Services
+- Knows nothing about the classes in the Application Layer
+
+**Core Concept: Domain Model**
+
+In the very center, depending on nothing outside it.
 
 Contains:
 
@@ -77,6 +85,8 @@ Contains:
   - When an entity changes, a Domain Event is triggered
   - Carry those changes with
   - To be used in Event Sourcing
+
+![Hexagonal](/blog/assets/architecture/hex-pie.jpg)
 
 ## References
 
