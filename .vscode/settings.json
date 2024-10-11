@@ -3,6 +3,7 @@
     "CQRS",
     "dompurify",
     "gemoji",
-    "Nextjs"
+    "Nextjs",
+    "textlint"
   ]
 }

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --pretty --noEmit"
+    "type-check": "tsc --pretty --noEmit",
+    "textlint": "textlint '_posts/*.md'"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -35,6 +36,7 @@
     "postcss": "^8.4.38",
     "semantic-release": "^24.1.2",
     "tailwindcss": "^3.4.4",
+    "textlint": "^14.2.1",
     "typescript": "^5.5.2"
   },
   "release": {
