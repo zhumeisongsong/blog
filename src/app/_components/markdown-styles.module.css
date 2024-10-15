@@ -45,4 +45,8 @@
   @apply bg-neutral-800 text-neutral-300;
 }
 
+.markdown img {
+  @apply mx-auto max-w-xl;
+}
+
 
