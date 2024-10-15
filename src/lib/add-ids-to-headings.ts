@@ -13,7 +13,5 @@ export default function addIdsToHeadings(html: string) {
     }
   });
 
-  console.log(headings);
-
   return tempDiv.innerHTML;
 }
