@@ -1,26 +1,13 @@
-import titleToHyphen from "@/lib/title-to-hyphen";
+import { extractHeadings } from "@/lib/extract-headings";
 import Link from "next/link";
 
 type Props = {
   content: string;
 };
 
-function extractHeadings(markdown: string): { level: number; text: string }[] {
-  const headingRegex = /^(#{1,6})\s+(.*)$/gm;
-  const headings = [];
-  let match: RegExpExecArray | null;
-
-  while ((match = headingRegex.exec(markdown)) !== null) {
-    const level = match[1].length;
-    const text = match[2].trim();
-    headings.push({ level, text });
-  }
-
-  return headings;
-}
-
 export function ContentNavigation({ content }: Props) {
   const headings = extractHeadings(content);
+  
   return (
     <div className="sticky top-0 hidden lg:block">
       <nav
@@ -32,7 +19,7 @@ export function ContentNavigation({ content }: Props) {
             <li key={index}>
               <Link
                 key={index}
-                href={`#${titleToHyphen(heading.text)}`}
+                href={`#${heading.id}`}
                 className={`block opacity-80 hover:opacity-100 ${
                   heading.level === 2
                     ? "text-stone-600 dark:text-stone-400 py-3"
