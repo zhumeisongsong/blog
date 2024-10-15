@@ -1,6 +1,7 @@
 "use client";
 import { BodyMarkdown } from "@/app/_components/body-markdown";
 import { BodyMermaid } from "@/app/_components/body-mermaid";
+import { ContentNavigation } from "@/app/_components/content-navigation";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -30,13 +31,16 @@ export function PostBody({ content }: Props) {
   }, [content, setArray]);
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div>
+      <ContentNavigation content={content} />
+      <div className="lg:pr-80">
       {array.map((item, index) => {
         if (isMermaidGraph(item)) {
           return <BodyMermaid key={index} graph={item} />;
         }
         return <BodyMarkdown key={index} content={item} />;
       })}
+         </div>
     </div>
   );
 }
