@@ -16,10 +16,6 @@ export function extractHeadings(
     const text = match[2].trim();
     headings.push({ level, text, id: titleToHyphen(text) });
   }
-
-  if (headings.length === 0) {
-    console.warn("No headings found in the provided markdown");
-  }
-
+  
   return headings;
 }
