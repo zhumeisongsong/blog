@@ -28,7 +28,7 @@ export function BodyMermaid({ graph }: Props) {
   return (
     <div
       ref={chartRef}
-      className="mermaid flex align-center justify-center bg-white rounded-lg p-16"
+      className="mermaid flex align-center justify-center bg-neutral-50 rounded-lg p-16"
     >
       {graph}
     </div>
