@@ -29,7 +29,7 @@ export function PostBody({ content }: Props) {
       const array = content.split("<!-- mermaid -->");
 
       array.map((item, index) => {
-        if (item.trim().startsWith("```")) {
+        if (item.trim().startsWith("```mermaid")) {
           array[index] = item.replace("mermaid", "").replaceAll("```", "");
         }
       });
