@@ -26,7 +26,14 @@ export function PostBody({ content }: Props) {
 
   useEffect(() => {
     if (content) {
-      setArray(content.split("<!-- mermaid -->"));
+      const array = content.split("<!-- mermaid -->");
+
+      array.map((item, index) => {
+        if (item.trim().startsWith("```")) {
+          array[index] = item.replace("mermaid", "").replaceAll("```", "");
+        }
+      });
+      setArray(array);
     }
   }, [content, setArray]);
 
@@ -34,13 +41,13 @@ export function PostBody({ content }: Props) {
     <div>
       <ContentNavigation content={content} />
       <div className="lg:pr-80">
-      {array.map((item, index) => {
-        if (isMermaidGraph(item)) {
-          return <BodyMermaid key={index} graph={item} />;
-        }
-        return <BodyMarkdown key={index} content={item} />;
-      })}
-         </div>
+        {array.map((item, index) => {
+          if (isMermaidGraph(item)) {
+            return <BodyMermaid key={index} graph={item} />;
+          }
+          return <BodyMarkdown key={index} content={item} />;
+        })}
+      </div>
     </div>
   );
 }
