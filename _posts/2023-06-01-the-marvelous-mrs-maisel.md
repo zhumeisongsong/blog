@@ -5,6 +5,7 @@ coverImage: "/blog/assets/maisel-cover.jpg"
 date: "2023-06-01"
 ogImage:
   url: "/blog/assets/maisel-cover.jpg"
+categories: ["gas-station"]
 pin: true
 ---
 
