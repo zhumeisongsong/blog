@@ -9,6 +9,13 @@ categories: ["architecture"]
 pin: true
 ---
 
+## What Does a Software Architect Really Do
+
+- Selecting a worthy challenge (aimed at creating value)
+- Complicating simple matters in thought (managing risks and preparing for the future)
+- Simplifying complex matters in action (delivering quality products while controlling costs)
+- Articulating complexity in a simple manner (ensuring successful knowledge transfer)
+
 ## Application Core organization
 
 ### :cat2: Application Layer
