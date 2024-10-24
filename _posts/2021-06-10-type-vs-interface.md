@@ -15,11 +15,15 @@ pin: true
 
 ### Interface
 
-**When to use**: need to use `extends`; working with objects that `inherit` from each other.
+**When to use**: 
+- need to use `extends`
+- working with objects that `inherit` from each other
 
-**Limit**: can't express unions, mapped types, or conditional type; interfaces with the same name in the same scope merge their declarations, leading to unexpected bugs.
+**Limit**: 
+- can't express unions, mapped types, or conditional type
+- interfaces with the same name in the same scope merge their declarations, leading to unexpected bugs
 
-### TypeScript performance wiki recommends using interfaces for object inheritance.
+### TypeScript performance wiki recommends using `interfaces for object inheritance`
 
 ```
 type WithId = {
