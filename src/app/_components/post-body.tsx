@@ -39,7 +39,9 @@ export function PostBody({ content }: Props) {
 
   return (
     <div>
-      <ContentNavigation content={content} />
+      <ContentNavigation
+        content={content}
+      />
       <div className="lg:pr-80">
         {array.map((item, index) => {
           if (isMermaidGraph(item)) {

@@ -1,5 +1,6 @@
-import { extractHeadings } from "@/lib/extract-headings";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { extractHeadings } from "@/lib/extract-headings";
 
 type Props = {
   content: string;
@@ -7,7 +8,46 @@ type Props = {
 
 export function ContentNavigation({ content }: Props) {
   const headings = extractHeadings(content);
-  
+  const [activeId, setActiveId] = useState<string>("");
+
+  const handleClickLink = (activeId: string) => {
+    setActiveId(activeId);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const headingElements = headings.map((heading) =>
+        document.getElementById(heading.id)
+      );
+
+      const activeSection = headingElements.find((heading) => {
+        if (heading) {
+          const rect = heading.getBoundingClientRect();
+          return (
+            rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2
+          );
+        }
+        return false;
+      });
+
+      if (activeSection) {
+        setActiveId(activeSection.id);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [headings]);
+
+  useEffect(() => {
+    if (!activeId) {
+      setActiveId(window.location.hash.substring(1));
+    }
+  }, [activeId, setActiveId]);
+
   return (
     <div className="sticky top-0 hidden lg:block">
       <nav
@@ -20,12 +60,16 @@ export function ContentNavigation({ content }: Props) {
               <Link
                 key={index}
                 href={`#${heading.id}`}
-                className={`block opacity-80 hover:opacity-100 ${
-                  heading.level === 2
-                    ? "text-stone-600 dark:text-stone-400 py-3"
-                    : "text-stone-400 dark:text-stone-500 pl-4 py-1 border-l-2"
-                }`}
+                className={`block opacity-80 hover:opacity-100 hover:font-bold
+                  ${
+                    heading.level === 2
+                      ? "text-stone-600 dark:text-stone-400 py-2"
+                      : "text-stone-400 dark:text-stone-500 pl-4 py-1 border-l-2"
+                  } 
+                    ${activeId === heading.id ? "font-bold opacity-100" : ""}
+                `}
                 aria-level={heading.level}
+                onClick={() => handleClickLink(heading.id)}
               >
                 {heading.text}
               </Link>
