@@ -21,16 +21,29 @@ export function BodyMarkdown({ content }: Props) {
 
   useEffect(() => {
     const hash = window.location.hash;
+
     if (!html || !hash) {
       return;
     }
+
     const elementId = hash.substring(1);
+
+    if (!elementId) {
+      return;
+    }
+
     const element = document.getElementById(elementId);
 
     if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
+      try {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+        element.focus({ preventScroll: true });
+      } catch (e) {
+        // Fallback for browsers that don't support smooth scrolling
+        element.scrollIntoView();
+      }
     }
   }, [html, window.location.hash]);
 
