@@ -20,10 +20,11 @@ export function BodyMarkdown({ content }: Props) {
   }, [content]);
 
   useEffect(() => {
-    if (!html) {
+    const hash = window.location.hash;
+    if (!html || !hash) {
       return;
     }
-    const elementId = window.location.hash.substring(1);
+    const elementId = hash.substring(1);
     const element = document.getElementById(elementId);
 
     if (element) {
@@ -31,7 +32,7 @@ export function BodyMarkdown({ content }: Props) {
         behavior: "smooth",
       });
     }
-  }, [html]);
+  }, [html, window.location.hash]);
 
   return (
     <div
