@@ -1,6 +1,7 @@
 import Footer from "@/app/_components/footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 
@@ -54,9 +55,31 @@ export default function RootLayout({
           content="/favicon/browserconfig.xml"
         />
         <meta name="theme-color" content="#000" />
-        <meta name="google-site-verification" content="71A3myPAsbW4yU-SCkZlmMSVmyagcPQGxCxU2IfHhx4" />
+        <meta
+          name="google-site-verification"
+          content="71A3myPAsbW4yU-SCkZlmMSVmyagcPQGxCxU2IfHhx4"
+        />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
+      {/* Google tag (gtag.js) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-RE9JWSTSX0"
+      ></Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RE9JWSTSX0', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+      />
       <body
         className={cn(
           inter.className,

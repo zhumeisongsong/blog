@@ -45,7 +45,7 @@ export function BodyMarkdown({ content }: Props) {
         element.scrollIntoView();
       }
     }
-  }, [html, window.location.hash]);
+  }, [html]);
 
   return (
     <div
