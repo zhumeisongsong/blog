@@ -12,11 +12,40 @@ type Props = {
 
 export function BodyMarkdown({ content }: Props) {
   const [html, setHtml] = useState<string>("");
+
   useEffect(() => {
     markdownToHtml(content).then((html) => {
       setHtml(addIdsToHeadings(html));
     });
   }, [content]);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    if (!html || !hash) {
+      return;
+    }
+
+    const elementId = hash.substring(1);
+
+    if (!elementId) {
+      return;
+    }
+
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      try {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+        element.focus({ preventScroll: true });
+      } catch (e) {
+        // Fallback for browsers that don't support smooth scrolling
+        element.scrollIntoView();
+      }
+    }
+  }, [html, window.location.hash]);
 
   return (
     <div
