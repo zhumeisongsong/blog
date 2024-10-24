@@ -1,6 +1,7 @@
 export const defaultCategories = {
   ddd: "ddd",
   architecture: "architecture",
+  "system-design": "system-design",
   git: "git",
   react: "react",
   project: "project",
