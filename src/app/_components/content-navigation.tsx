@@ -67,7 +67,6 @@ export function ContentNavigation({ content }: Props) {
           {headings.map((heading, index) => (
             <li key={index}>
               <Link
-                key={index}
                 href={`#${heading.id}`}
                 className={classNames(
                   "block opacity-80 hover:opacity-100 hover:font-bold",
