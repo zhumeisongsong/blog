@@ -49,7 +49,10 @@
   @apply border;
 }
 
-.markdown th, .markdown td {
-  @apply border px-2 py-4;
+.markdown td {
+  @apply border px-4 py-2 align-top;
 }
 
+.markdown th {
+  @apply border px-4 py-2 font-semibold text-left;
+}
