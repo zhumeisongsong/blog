@@ -45,3 +45,11 @@
   @apply bg-neutral-800 text-neutral-300;
 }
 
+.markdown table {
+  @apply border;
+}
+
+.markdown th, .markdown td {
+  @apply border px-2 py-4;
+}
+
