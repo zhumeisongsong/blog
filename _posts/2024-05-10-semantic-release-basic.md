@@ -70,7 +70,7 @@ Semantic Release requires access to GitHub to create releases. You need to creat
 - Choose a descriptive name (REPO_ACCESS_TOKEN), set expiration, and select the repo scope.
 - Copy the token and save it securely.
 
-### Step 4: Configure Environment Variables
+### Step 4: Configure Env Variables
 
 You need to set your GitHub token in your environment. You can set this up in your CI/CD pipeline settings or locally.
 
