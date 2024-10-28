@@ -31,6 +31,8 @@ jobs:
   build:
     needs: setup
     uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-build-github-pages.yml@main
+    with:
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
 
   deploy:
     needs: build
