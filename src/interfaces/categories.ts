@@ -10,6 +10,8 @@ export const defaultCategories = {
   "gas-station": "gas-station",
   solid: "solid",
   nextjs: "nextjs",
+  "semantic-release": "semantic-release",
+  oss: "oss",
 } as const;
 
 export type Category =
