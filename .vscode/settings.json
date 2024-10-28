@@ -5,6 +5,7 @@
     "gemoji",
     "maisel",
     "Nextjs",
+    "postbuild",
     "textlint"
   ]
 }
