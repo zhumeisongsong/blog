@@ -41,5 +41,5 @@ jobs:
       REPO_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
-    needs: build
+    needs: release
     uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-deploy-github-pages.yml@main
