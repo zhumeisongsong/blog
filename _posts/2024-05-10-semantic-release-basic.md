@@ -64,31 +64,38 @@ Add blow to package.json:
 
 Semantic Release requires access to GitHub to create releases. You need to create a GitHub token with repo permissions.
 
-- Go to your **GitHub account settings**.
-- Navigate to **Developer settings** > **Personal access tokens** > **Tokens (classic)**.
-- Click **Generate new token**.
-- Choose a descriptive name (REPO_ACCESS_TOKEN), set expiration, and select the repo scope.
-- Copy the token and save it securely.
+At the start of each workflow job, GitHub automatically creates a unique GITHUB_TOKEN secret to use in your workflow. You can use the GITHUB_TOKEN to authenticate in the workflow job. [About the GITHUB_TOKEN secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication#about-the-github_token-secret)
 
-### Step 4: Configure Env Variables
 
-You need to set your GitHub token in your environment. You can set this up in your CI/CD pipeline settings or locally.
 
-- Go to your **GitHub repository**.
-- Navigate to **Settings** > **Secrets and variables** > **Actions**.
-- Click New repository secret and name it **REPO_ACCESS_TOKEN** or **GH_TOKEN**, then paste the token.
-
-*GITHUB_TOKEN in an invalid name.
-
-### Step 5: Add a GitHub Action Workflow
-
-Create a workflow file in `.github/workflows/release.yml`:
+### Step 4: Add a GitHub Action Workflow
 
 Here is a reusable workflow for the release job: 
 
 https://github.com/zhumeisongsong/shared-actions/blob/main/.github/workflows/reusable-semantic-release.yml
 
-### Step 6: Commit Changes and Push
+Create a workflow file in `.github/workflows/release.yml`and use the reusable workflow:
+
+```
+name: Github Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-pnpm-setup.yml@main
+
+  release:
+    needs: setup
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-semantic-release.yml@main
+    secrets:
+      REPO_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+### Step 5: Commit Changes and Push
 
 Install git-cz by : `pnpm install git-cz -D`
 
@@ -111,13 +118,13 @@ Add script in package.json:
 
 Run `pnpm run commit` to submit the change.
 
-### Step 7: Test the Setup
+### Step 6: Test the Setup
 
 Make some changes to your project and commit them with conventional commit messages (e.g., fix: correct typo, feat: add new feature).
 
 Push those changes to the main branch.
 
-### Step 8: Verify Release
+### Step 7: Verify Release
 
 Check the Releases section of your GitHub repository to see if the release and tags were created automatically based on your commit messages.
 
