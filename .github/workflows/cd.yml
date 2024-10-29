@@ -33,6 +33,12 @@ jobs:
     uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-build-github-pages.yml@main
     with:
       NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+    
+  release:
+    needs: build
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-semantic-release.yml@main
+    secrets:
+      REPO_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     needs: build
