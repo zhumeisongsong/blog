@@ -57,6 +57,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.1
+      '@zhumeisong/git-cz-config':
+        specifier: ^1.1.1
+        version: 1.1.1
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.20(postcss@8.4.47)
@@ -562,6 +565,9 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+
+  '@zhumeisong/git-cz-config@1.1.1':
+    resolution: {integrity: sha512-OPmi+IfK76kAeSdz6CnE5nTx9Bpz3UJMpnppxIDQlz6RSFXQDx3oG9XsvTHJJ8brZ7w/iBvFZgxWmFQfUhALuQ==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -4189,6 +4195,8 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.2.0': {}
+
+  '@zhumeisong/git-cz-config@1.1.1': {}
 
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
