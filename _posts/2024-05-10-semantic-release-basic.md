@@ -35,7 +35,7 @@ By default, commitizen uses [conventional commits](https://www.conventionalcommi
 
 Functionally, they are almost the same, but the major difference is that git-cz does not require the initialization process of the repository.
 
-You could customize you changelog config by adding `changelog.config.cjs`, here is [my version](https://github.com/zhumeisongsong/blog/blob/main/changelog.config.cjs).
+You could customize you changelog config by adding `changelog.config.cjs`, here is [my version](https://www.npmjs.com/package/@zhumeisong/git-cz-config).
 
 
 ## Guide Step-By-Step
