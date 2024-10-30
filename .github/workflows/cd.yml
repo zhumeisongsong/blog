@@ -36,4 +36,4 @@ jobs:
 
   deploy:
     needs: build
-    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-nextjs-deploy-github-pages.yml@main
+    uses: zhumeisongsong/shared-actions/.github/workflows/reusable-static-html-deploy-github-pages.yml@main
