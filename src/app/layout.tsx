@@ -55,7 +55,31 @@ export default function RootLayout({
           content="/favicon/browserconfig.xml"
         />
         <meta name="theme-color" content="#000" />
+        <meta name="google-adsense-account" content="ca-pub-1141212403322647" />
+        <meta
+          name="google-site-verification"
+          content="71A3myPAsbW4yU-SCkZlmMSVmyagcPQGxCxU2IfHhx4"
+        />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-L74CKN4BBD"
+        ></Script>
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-L74CKN4BBD', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
       </head>
       <body
         className={cn(
