@@ -11,17 +11,29 @@ pin: true
 
 ## Rebase to change the commit content like author etc.
 
-- `git rebase -i --root`
-- change pick to edit
-- `git commit --amend --author="Author Name <email@example.com>"`
-- `git rebase --continue`
-- `git push --force`
+`git rebase -i --root`
+
+change pick to edit
+
+`git commit --amend --author="Author Name <email@example.com>"`
+
+`git rebase --continue`
+
+`git push --force`
 
 ## Set local user
 
-- `git config user.email "email@example.com"`
-- `git config user.name "Author Name"`
+`git config user.email "email@example.com"`
+
+`git config user.name "Author Name"`
 
 ## List author of commit
 
 `git log --pretty=format:"%h - %an <%ae>"`
+
+
+## Abort rebase
+
+`git config pull.rebase true`
+
+`git rebase --abort`
