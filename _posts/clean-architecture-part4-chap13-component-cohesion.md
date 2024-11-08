@@ -8,24 +8,28 @@ ogImage:
 categories: ["clean"]
 ---
 
-Which classes belong in which components? The three principles of component cohesion are:
+Which classes belong in which components? 
+
+Here are three principles of component cohesion are:
 
 ## REP: The Reuse/Release Equivalence Principle
 
-The granule of reuse is the granule of release.
+The classes and modules that are formed into a component must belong to **a cohesive group**.  There must be **some overarching theme or purpose** that those modules all share.
 
-`software reuse—a fulfillment of one of the oldest promises of the object-oriented model.`
+The granule of reuse is the granule of release.One of the oldest promises of the object-oriented model is software reuse.
 
 Reuse/Release components' basic requirements:
-- tracked through a `release process`
-- are given `release numbers`
--  `when` new releases are coming
-- `which changes` those new releases will bring
--  produce the appropriate notifications and release documentation
+- tracked through a **release process**
+- are given **release numbers**
 
-The classes and modules that are formed into a component must belong to `a cohesive group`. There must be `some overarching theme or purpose` that those modules all share.
+For:
+- without release numbers, there would be no way to ensure that all the reused components are compatible with each other
+- software developers need to know when new releases are coming, and which changes those new releases will bring
+- the release process must produce the appropriate notifications and release documentation so that users can make informed decisions about when and whether to integrate the new release.
 
-The advice is weak because it is `hard to precisely explain` the glue that holds the classes and modules together into a single component.
+Weakness:
+- It is hard to precisely explain the glue that holds the classes and modules together into a single component.
+- The weakness of this principle is more than compensated for by the strength of the CCP and the CRP. In a negative sense.
 
 ## CCP: The Common Closure Principle
 
