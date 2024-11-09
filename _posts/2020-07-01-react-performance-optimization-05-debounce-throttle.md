@@ -13,7 +13,12 @@ In the search component, the search callback is triggered when the content in th
 When the component can process the search results quickly, the user does not feel the input delay.
 However, in the actual scenario, the list page of the middle and backend application is very complex, and the component's Render on the search result will cause the page to lag, which obviously affects the user's input experience.
 
-## The [useDebounce](https://github.com/xnimorz/use-debounce#simple-values-debouncing) + useEffect approach is generally used in search scenarios to get data.
+## Debounce
+
+![debounce](/blog/assets/react-performance-optimization/debounce.png)
+
+
+The [useDebounce](https://github.com/xnimorz/use-debounce#simple-values-debouncing) + useEffect approach is generally used in search scenarios to get data.
 
 Example reference: [debounce-search](https://codesandbox.io/s/debounce-search-btuyxd)
 
@@ -46,11 +51,17 @@ export default function App() {
 }
 ```
 
-## Why is `debounce` used in the search scenario instead of `throttle`?
+## Throttle
 
-throttle is **a special scenario** of debounce, throttle gives **maxWait parameter** to debounce, see `useThrottleCallback`.
+Throttle is **a special scenario** of debounce, throttle gives **maxWait parameter** to debounce, see `useThrottleCallback`.
 
-debounce is more suitable to be used in the **search scenario**, which only needs to **respond to the last input of the user**, not to the intermediate input of the user.
+![throttle](/blog/assets/react-performance-optimization/throttle.png)
+
+## Debounce Versus Throttle 
+
+Why is `debounce` used in the search scenario instead of `throttle`?
+
+Debounce is more suitable to be used in the **search scenario**, which only needs to **respond to the last input of the user**, not to the intermediate input of the user.
 
 And throttle is more suitable for scenarios that require real-time response to the user:
 
