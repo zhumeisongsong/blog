@@ -2,7 +2,7 @@
 title: "Clean Architecture Part6. Chap33. Case Study: Video Sales"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
-date: "2018-12-01"
+date: "2019-12-01"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 ---

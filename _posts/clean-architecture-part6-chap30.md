@@ -2,7 +2,7 @@
 title: "Clean Architecture Part6. Chap30. The Database is a Detail"
 excerpt: ""
 coverImage: "/blog/assets/ca-30-cover.jpg"
-date: "2018-11-26"
+date: "2019-11-05"
 ogImage:
   url: "/blog/assets/ca-30-cover.jpg"
 ---
