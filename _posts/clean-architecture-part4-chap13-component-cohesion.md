@@ -5,7 +5,7 @@ coverImage: "/blog/assets/clean-architecture-13-cover.jpg"
 date: "2018-08-24"
 ogImage:
   url: "/blog/assets/clean-architecture-13-cover.jpg"
-categories: ["clean", "architecture"]
+categories: ["clean"]
 pin: true
 ---
 
@@ -94,11 +94,21 @@ The CRP advises us not to depend on **components** that have **classes** we don�
 
 SO, **don’t depend on things you don’t need**.
 
-### The Tension Diagram for Component Cohesion
+## The Tension Diagram for Component Cohesion
+
+The three cohesion principles tend to fight each other. 
+
+The REP and CCP are **inclusive** principles: Both tend to make components larger. 
+
+The CRP is an **exclusive** principle, driving components to be smaller. 
+
+It is the tension between these principles that good architects seek to resolve.
+
+![tension diagram](/blog/assets/clean-architecture/13-tension-diagram.png)
 
 ## Conclusion
 
 
-## Reference
+## References
 
 https://github.com/leewaiho/Clean-Architecture-zh/blob/master/docs/ch13.md

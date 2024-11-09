@@ -34,8 +34,9 @@ The term “mid-level” refers to the fact that these principles are applied by
 
 Just as it is possible to create a substantial mess with well-made bricks, so it is also possible to create a system-wide mess with well-designed mid-level components. For this reason, once we have covered the SOLID principles, we will move on to their counterparts in the component world, and then to the principles of high-level architecture.
 
+## References
 
-
+https://github.com/leewaiho/Clean-Architecture-zh/blob/master/docs/part3.md
 
 
 
