@@ -2,7 +2,7 @@
 title: "Clean Architecture Part4. Chap14. Component Coupling"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
-date: "2018-09-10"
+date: "2019-06-28"
 ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 ---

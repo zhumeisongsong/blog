@@ -2,7 +2,7 @@
 title: "Clean Architecture Part4. Chap13. Component Cohesion"
 excerpt: ""
 coverImage: "/blog/assets/clean-architecture-13-cover.jpg"
-date: "2018-08-24"
+date: "2019-06-27"
 ogImage:
   url: "/blog/assets/clean-architecture-13-cover.jpg"
 categories: ["clean"]
