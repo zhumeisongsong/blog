@@ -6,7 +6,7 @@ date: "2018-08-24"
 ogImage:
   url: "/blog/assets/clean-architecture-13-cover.jpg"
 categories: ["clean", "architecture"]
-ping: true
+pin: true
 ---
 
 Which classes belong in which components? 
