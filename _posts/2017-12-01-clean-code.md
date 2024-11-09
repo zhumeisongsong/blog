@@ -2,7 +2,7 @@
 title: "Clean Code Index"
 excerpt: ""
 coverImage: "/blog/assets/clean-code-cover.jpg"
-date: "2017-04-24"
+date: "2017-12-01"
 ogImage:
   url: "/blog/assets/clean-code-cover.jpg"
 categories: ['clean']
