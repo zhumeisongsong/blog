@@ -21,11 +21,11 @@ pin: true
 
 <!-- [Chap3. Paradigm Overview]()
 
-[Chap4. Structured Programming]()
+[Chap4. Structured Programming]() -->
 
-[Chap5. Object-Oriented Programming]()
+[Chap5. Object-Oriented Programming](/blog/posts/clean-architecture-part2-chap5)
 
-[Chap6. Functional Programming]() -->
+<!-- [Chap6. Functional Programming]() -->
 
 ### Part 3 Design Principles
 
