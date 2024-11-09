@@ -34,6 +34,29 @@ Weakness:
 
 ## CCP: The Common Closure Principle
 
+The CCP prompts us to **gather together in one place all the classes that are likely to change for the same reasons**.
+If two classes are so tightly bound, **either physically or conceptually**, that they always change together, then they belong in the same component. This minimizes the workload related to releasing, revalidating, and redeploying the software. 
+
+This is the Single Responsibility Principle restated for components. Just as the SRP says that a class should not contain multiples reasons to change, so the Common Closure Principle (CCP) says that a component **should not have multiple reasons** to change.
+
+For most applications, **maintainability** is more important than reusability.
+
+If the code in an application must change, you would rather that all of the changes occur in one component, rather than being distributed across many components. **If changes are confined to a single component, then we need to redeploy only the one changed component.** Other components that don’t depend on the changed component do not need to be revalidated or redeployed.
+
+This principle is closely associated with the Open Closed Principle (OCP). Indeed, it is “closure” in the OCP sense of the word that the CCP addresses. **The OCP states that classes should be closed for modification but open for extension**. Because 100% closure is not attainable, closure must be strategic. We design our classes such that they are closed to the most common kinds of changes that we expect or have experienced.
+
+#### Similarity With SRP
+
+As stated earlier, the CCP is **the component form** of the SRP. 
+
+The SRP tells us to separate methods into different classes, if they change for different reasons. 
+
+The CCP tells us to separate classes into different components, if they change for different reasons.
+
+Both principles can be summarized by the following sound bite:
+
+Gather together those things that change at the same times and for the same reasons. Separate those things that change at different times or for different reasons.
+
 ## CRP: The Common Reuse Principle
 
 Classes are seldom reused in isolation. More typically, reusable classes collaborate with other classes that are part of the reusable abstraction. The CRP states that these classes **belong together** in the same component. In such a component we would expect to see classes that have lots of dependencies on each other.
@@ -61,7 +84,7 @@ Thus when we depend on a component, we want to make sure **we depend on every cl
 
  The CRP tells us more about which classes shouldn’t be together than about which classes should be together. The CRP says that classes that are not **tightly bound** to each other should not be in the same component.
 
-### Relation to ISP
+#### Relation to ISP
 
 The CRP is the generic version of the ISP. 
 
@@ -75,3 +98,7 @@ SO, **don’t depend on things you don’t need**.
 
 ## Conclusion
 
+
+## Reference
+
+https://github.com/leewaiho/Clean-Architecture-zh/blob/master/docs/ch13.md
