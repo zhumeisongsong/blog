@@ -2,7 +2,7 @@
 title: Clean Architecture Index
 excerpt: ""
 coverImage: "/blog/assets/clean-architecture-cover.jpg"
-date: "2018-12-25"
+date: "2019-12-25"
 ogImage:
   url: "/blog/assets/clean-architecture-cover.jpg"
 categories: ["clean"]
@@ -43,7 +43,7 @@ pin: true
 
 ### Part 4 Component Principles
 
-[Chap12. Components]()
+[Chap12. Components](/blog/posts/clean-architecture-part4-chap12)
 
 [Chap13. Component Cohesion](/blog/posts/clean-architecture-part4-chap13)
 
@@ -91,4 +91,4 @@ pin: true
 
 [Chap33. Case Study: Video Sales](/blog/posts/clean-architecture-part6-chap33)
 
-<!-- [Chap34. Missing Chapter]() -->
+[Chap34. The Missing Chapter](/blog/posts/clean-architecture-part6-chap34)
