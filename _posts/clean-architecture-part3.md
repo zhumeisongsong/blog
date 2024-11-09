@@ -2,7 +2,7 @@
 title: "Clean Architecture Part3. Design Principles"
 excerpt: ""
 coverImage: "/blog/assets/ca-3-cover.jpg"
-date: "2018-05-05"
+date: "2019-06-01"
 ogImage:
   url: "/blog/assets/ca-3-cover.jpg"
 categories: ['clean', 'solid']
