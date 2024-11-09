@@ -7,3 +7,23 @@ ogImage:
   url: "/blog/assets/hello-world/cover.jpg"
 categories: ["clean"]
 ---
+
+## Package By Layer
+
+## Package By Feature
+
+## Ports and Adapters
+
+## Package By Component
+
+## The Devil Is in the Implementation Details
+
+## Organization Versus Encapsulation
+
+## Other Decoupling Modes
+
+## Conclusion
+
+## References
+
+https://github.com/leewaiho/Clean-Architecture-zh/blob/master/docs/ch34.md

@@ -31,15 +31,15 @@ pin: true
 
 [Design Principles](/blog/posts/clean-architecture-part3)
 
-<!-- [Chap7. SRP: The Single Responsibility Principle]()
+<!-- [Chap7. SRP: The Single Responsibility Principle]() -->
 
-[Chap8. OCP: The Open-Closed Principle]()
+<!-- [Chap8. OCP: The Open-Closed Principle]() -->
 
-[Chap9. LSP: The Liskov Substitution Principle]()
+<!-- [Chap9. LSP: The Liskov Substitution Principle]() -->
 
-[Chap10. ISP: The Interface Segregation Principle]()
+[Chap10. ISP: The Interface Segregation Principle](/blog/posts/clean-architecture-part3-chap10)
 
-[Chap11. DIP: The Dependency Inversion Principle]() -->
+<!-- [Chap11. DIP: The Dependency Inversion Principle]() -->
 
 ### Part 4 Component Principles
 

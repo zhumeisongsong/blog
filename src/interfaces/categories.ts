@@ -1,17 +1,18 @@
 export const defaultCategories = {
-  ddd: "ddd",
-  architecture: "architecture",
   "system-design": "system-design",
-  git: "git",
-  react: "react",
-  project: "project",
+  ddd: "ddd",
+  clean: "clean",
+  architecture: "architecture",
+  solid: "solid",
   basic: "basic",
   typescript: "typescript",
-  "gas-station": "gas-station",
-  solid: "solid",
+  react: "react",
   nextjs: "nextjs",
   "semantic-release": "semantic-release",
+  git: "git",
   oss: "oss",
+  "gas-station": "gas-station",
+  project: "project",
 } as const;
 
 export type Category =

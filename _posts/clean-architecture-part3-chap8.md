@@ -1,5 +1,5 @@
 ---
-title: "Clean Architecture Part3. Chap8."
+title: "Clean Architecture Part3. Chap8. OCP: The Open-Closed Principle"
 excerpt: ""
 coverImage: "/blog/assets/hello-world/cover.jpg"
 date: "2019-06-10"
