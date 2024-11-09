@@ -6,7 +6,6 @@ date: "2019-06-01"
 ogImage:
   url: "/blog/assets/ca-3-cover.jpg"
 categories: ['clean', 'solid']
-pin: true
 ---
 Good software systems begin with `clean code`. 
 On the one hand, if the `bricks` aren’t well made, the `architecture` of the building doesn’t matter much. 

@@ -6,7 +6,6 @@ date: "2017-12-01"
 ogImage:
   url: "/blog/assets/clean-code-cover.jpg"
 categories: ['clean']
-pin: true
 ---
 
 [Chapter 1: Clean Code](/blog/posts/clean-code-chapter1)
