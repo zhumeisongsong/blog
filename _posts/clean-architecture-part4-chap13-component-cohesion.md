@@ -45,7 +45,7 @@ If the code in an application must change, you would rather that all of the chan
 
 This principle is closely associated with the Open Closed Principle (OCP). Indeed, it is “closure” in the OCP sense of the word that the CCP addresses. **The OCP states that classes should be closed for modification but open for extension**. Because 100% closure is not attainable, closure must be strategic. We design our classes such that they are closed to the most common kinds of changes that we expect or have experienced.
 
-#### Similarity With SRP
+### Similarity With SRP
 
 As stated earlier, the CCP is **the component form** of the SRP. 
 
@@ -67,12 +67,19 @@ A simple example might be a container class and its associated iterators. These 
 The following are all built-in JavaScript iterators:
 
 - The Array Iterator returned by Array.prototype.values(), Array.prototype.keys(), Array.prototype.entries(), Array.prototype[Symbol.iterator](), TypedArray.prototype.values(), TypedArray.prototype.keys(), TypedArray.prototype.entries(), TypedArray.prototype[Symbol.iterator](), and arguments[Symbol.iterator]().
+
 - The String Iterator returned by String.prototype[Symbol.iterator]().
+
 - The Map Iterator returned by Map.prototype.values(), Map.prototype.keys(), Map.prototype.entries(), and Map.prototype[Symbol.iterator]().
+
 - The Set Iterator returned by Set.prototype.values(), Set.prototype.keys(), Set.prototype.entries(), and Set.prototype[Symbol.iterator]().
+
 - The RegExp String Iterator returned by RegExp.prototype[Symbol.matchAll]() and String.prototype.matchAll().
+
 - The Generator object returned by generator functions.
+
 - The Segments Iterator returned by the [Symbol.iterator]() method of the Segments object returned by Intl.Segmenter.prototype.segment().
+
 - The Iterator Helper returned by iterator helper methods such as Iterator.prototype.filter() and Iterator.prototype.map().
 ```
 
@@ -84,7 +91,7 @@ Thus when we depend on a component, we want to make sure **we depend on every cl
 
  The CRP tells us more about which classes shouldn’t be together than about which classes should be together. The CRP says that classes that are not **tightly bound** to each other should not be in the same component.
 
-#### Relation to ISP
+### Relation to ISP
 
 The CRP is the generic version of the ISP. 
 
@@ -106,8 +113,21 @@ It is the tension between these principles that good architects seek to resolve.
 
 ![tension diagram](/blog/assets/clean-architecture/13-tension-diagram.png)
 
+A good architect finds a position in that tension triangle that meets the current concerns of the development team, but is also aware that those concerns will change over time. 
+
+For example, early in the development of a project, the CCP is much more important than the REP, because **develop-ability** is more important than **reuse**.
+
+Generally, projects tend to start on the **right** hand side of the triangle, where the only sacrifice is reuse. As the project matures, and other projects begin to draw from it, the project will slide over to the **left**. This means that the component structure of a project can vary with time and maturity.
+
+ It has more to do with the way that project is **developed and used**, than with what the project actually does.
+
 ## Conclusion
 
+In choosing the classes to group together into components, we must consider the opposing forces involved in **reusability and develop-ability**.
+
+Balancing these forces with the needs of the application is nontrivial. Moreover, the balance is almost always dynamic. That is, the partitioning that is appropriate today might not be appropriate next year. 
+
+As a consequence, the composition of the components will likely jitter and evolve with time as the focus of the project changes from develop-ability to reusability.
 
 ## References
 
