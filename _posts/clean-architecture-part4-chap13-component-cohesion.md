@@ -1,11 +1,12 @@
 ---
 title: "Clean Architecture Part4. Chap13. Component Cohesion"
 excerpt: ""
-coverImage: "/blog/assets/hello-world/cover.jpg"
+coverImage: "/blog/assets/clean-architecture-13-cover.jpg"
 date: "2018-08-24"
 ogImage:
-  url: "/blog/assets/hello-world/cover.jpg"
-categories: ["clean"]
+  url: "/blog/assets/clean-architecture-13-cover.jpg"
+categories: ["clean", "architecture"]
+ping: true
 ---
 
 Which classes belong in which components? 
@@ -33,12 +34,44 @@ Weakness:
 
 ## CCP: The Common Closure Principle
 
-Gather together those things that change at the same times and for the same reasons. Separate those things that change at different times or for different reasons.
-
-A component should not have multiple reasons to change.
-
-For most applications, maintainability is more important than reusability. ` If the code in an application must change, you would rather that all of the changes occur in one component, rather than being distributed across many components.` If changes are confined to a single component, then we need to  `redeploy only the one changed` component. 
-
-If two classes are so tightly bound, either physically or conceptually, that they always change together, then they belong in the same component.
-
 ## CRP: The Common Reuse Principle
+
+Classes are seldom reused in isolation. More typically, reusable classes collaborate with other classes that are part of the reusable abstraction. The CRP states that these classes **belong together** in the same component. In such a component we would expect to see classes that have lots of dependencies on each other.
+
+A simple example might be a container class and its associated iterators. These classes are reused together because they are tightly coupled to each other. Thus they ought to be in the same component.
+
+```
+The following are all built-in JavaScript iterators:
+
+- The Array Iterator returned by Array.prototype.values(), Array.prototype.keys(), Array.prototype.entries(), Array.prototype[Symbol.iterator](), TypedArray.prototype.values(), TypedArray.prototype.keys(), TypedArray.prototype.entries(), TypedArray.prototype[Symbol.iterator](), and arguments[Symbol.iterator]().
+- The String Iterator returned by String.prototype[Symbol.iterator]().
+- The Map Iterator returned by Map.prototype.values(), Map.prototype.keys(), Map.prototype.entries(), and Map.prototype[Symbol.iterator]().
+- The Set Iterator returned by Set.prototype.values(), Set.prototype.keys(), Set.prototype.entries(), and Set.prototype[Symbol.iterator]().
+- The RegExp String Iterator returned by RegExp.prototype[Symbol.matchAll]() and String.prototype.matchAll().
+- The Generator object returned by generator functions.
+- The Segments Iterator returned by the [Symbol.iterator]() method of the Segments object returned by Intl.Segmenter.prototype.segment().
+- The Iterator Helper returned by iterator helper methods such as Iterator.prototype.filter() and Iterator.prototype.map().
+```
+
+It also tells us which classes **not to keep together** in a component. 
+
+When one component uses another, a dependency is created between the components. Perhaps the using component uses only one class within the used component—but that still doesn’t weaken the dependency. The using component still depends on the used component.Because of that dependency, every time the used component is changed, the using component will likely need corresponding changes. Even if no changes are necessary to the using component, it will likely still need to be **recompiled, revalidated, and redeployed**. This is true even if the using component doesn’t care about the change made in the used component.
+
+Thus when we depend on a component, we want to make sure **we depend on every class in that component**. Put another way, we want to make sure that the classes that we put into a component are inseparable—that it is impossible to depend on some and not on the others.
+
+ The CRP tells us more about which classes shouldn’t be together than about which classes should be together. The CRP says that classes that are not **tightly bound** to each other should not be in the same component.
+
+### Relation to ISP
+
+The CRP is the generic version of the ISP. 
+
+The ISP advises us not to depend on **classes** that have **methods** we don’t use. 
+
+The CRP advises us not to depend on **components** that have **classes** we don’t use.
+
+SO, **don’t depend on things you don’t need**.
+
+### The Tension Diagram for Component Cohesion
+
+## Conclusion
+
