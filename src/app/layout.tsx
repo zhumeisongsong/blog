@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `Song's Blog`,
-  description: `A statically generated blog using Next.js and Markdown.`,
+  description: `Objects are abstractions of processing. Threads are abstractions of schedule.`,
   openGraph: {
     images: "",
   },
