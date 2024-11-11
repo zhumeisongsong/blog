@@ -3,6 +3,7 @@ export const defaultCategories = {
   ddd: "ddd",
   clean: "clean",
   architecture: "architecture",
+  "clean-architecture": "clean-architecture",
   solid: "solid",
   basic: "basic",
   typescript: "typescript",

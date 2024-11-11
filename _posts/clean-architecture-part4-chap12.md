@@ -5,7 +5,7 @@ coverImage: "/blog/assets/clean-architecture-12-cover.jpg"
 date: "2019-06-26"
 ogImage:
   url: "/blog/assets/clean-architecture-12-cover.jpg"
-categories: ["clean"]
+categories: ["clean", "clean-architecture"]
 ---
 
 If the SOLID principles tell us how to **arrange the bricks into walls and rooms**, then the component principles tell us how to **arrange the rooms into buildings**.

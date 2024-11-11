@@ -5,7 +5,7 @@ coverImage: "/blog/assets/clean-architecture-10-cover.jpg"
 date: "2019-06-20"
 ogImage:
   url: "/blog/assets/clean-architecture-10-cover.jpg"
-categories: ["clean"]
+categories: ["clean", "clean-architecture"]
 ---
 
 ![10.1](/blog/assets/clean-architecture/10-isp.png)
@@ -22,7 +22,7 @@ Again, if we imagine that this is implemented in a statically typed language lik
 
 ## ISP and Language
 
-Clearly, the previously given description depends critically on language type. 
+Clearly, the previously given description depends critically on language type.
 
 Statically typed languages like Java force programmers to create declarations that users must import, or use, or otherwise include. It is these included declarations in source code that create the source code dependencies that force recompilation and redeployment.
 

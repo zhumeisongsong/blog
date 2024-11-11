@@ -5,7 +5,7 @@ coverImage: "/blog/assets/clean-architecture-13-cover.jpg"
 date: "2019-06-27"
 ogImage:
   url: "/blog/assets/clean-architecture-13-cover.jpg"
-categories: ["clean"]
+categories: ["clean","clean-architecture"]
 ---
 
 Which classes belong in which components? 
