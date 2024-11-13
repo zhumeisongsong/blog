@@ -53,7 +53,7 @@ export default function App() {
 
 ## Throttle
 
-Throttle is **a special scenario** of debounce, throttle gives **maxWait parameter** to debounce, see [useThrottleCallback](https://github.com/xnimorz/use-debounce/blob/master/src/useThrottledCallback.ts)`.
+`throttle` is **a special scenario** of `debounce`, `throttle` gives **maxWait parameter** to `debounce`, see [useThrottleCallback](https://github.com/xnimorz/use-debounce/blob/master/src/useThrottledCallback.ts)`.
 
 ![throttle](/blog/assets/react-performance-optimization/throttle.png)
 
@@ -61,12 +61,12 @@ Throttle is **a special scenario** of debounce, throttle gives **maxWait paramet
 
 Why is `debounce` used in the search scenario instead of `throttle`?
 
-Debounce is more suitable to be used in the **search scenario**, which only needs to **respond to the last input of the user**, not to the intermediate input of the user.
+`debounce` is more suitable to be used in the **search scenario**, which only needs to **respond to the last input of the user**, not to the intermediate input of the user.
 
-And throttle is more suitable for scenarios that require real-time response to the user:
+And `throttle` is more suitable for scenarios that require real-time response to the user:
 
 - resizing by dragging and dropping
 - zooming in and out by dragging and dropping
 - e.g. window's resize event...
 
-In the scenario of real time user response, if the callback time is small, you can even use `requestAnimationFrame` instead of throttle.
+In the scenario of real time user response, if the callback time is small, you can even use `requestAnimationFrame` instead of `throttle`.
