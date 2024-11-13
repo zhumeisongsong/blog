@@ -53,7 +53,7 @@ export default function App() {
 
 ## Throttle
 
-Throttle is **a special scenario** of debounce, throttle gives **maxWait parameter** to debounce, see `useThrottleCallback`.
+Throttle is **a special scenario** of debounce, throttle gives **maxWait parameter** to debounce, see [useThrottleCallback](https://github.com/xnimorz/use-debounce/blob/master/src/useThrottledCallback.ts)`.
 
 ![throttle](/blog/assets/react-performance-optimization/throttle.png)
 
