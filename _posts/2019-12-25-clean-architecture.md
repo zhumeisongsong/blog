@@ -13,9 +13,9 @@ pin: true
 
 <!-- [Introduction]()
 
-[Chap1. What Is Design and Architecture?]()
+[Chap1. What Is Design and Architecture?]() -->
 
-[Chap2. A Table of Two Values]() -->
+[Chap2. A Table of Two Values](/blog/posts/clean-architecture-part1-chap2) 
 
 ### Part 2 Starting wih the Bricks: Programming Paradigms
 
