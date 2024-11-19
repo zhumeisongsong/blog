@@ -60,7 +60,6 @@ Add blow to package.json:
       "@semantic-release/release-notes-generator", // Generate release notes
       "@semantic-release/github", // Publish to GitHub
       "@semantic-release/changelog", // Generate a changelog
-      "@semantic-release/npm", // Publish to npm
       "@semantic-release/git" // Commit and push the changes
     ]
   }
@@ -139,8 +138,6 @@ Check the Releases section of your GitHub repository to see if the release and t
 You can customize Semantic Release further by adding more plugins, such as:
 
 `@semantic-release/npm` to publish to npm.
-
-`@semantic-release/changelog` to generate a changelog.
 
 `@semantic-release/exec` for running custom commands.
 
