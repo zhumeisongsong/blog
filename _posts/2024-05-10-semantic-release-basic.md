@@ -60,6 +60,7 @@ Add blow to package.json:
       "@semantic-release/release-notes-generator", // Generate release notes
       "@semantic-release/github", // Publish to GitHub
       "@semantic-release/changelog", // Generate a changelog
+      "@semantic-release/npm", // Publish to npm, skip publishing to npm registry as package.json's private property is true
       "@semantic-release/git" // Commit and push the changes
     ]
   }
@@ -133,13 +134,6 @@ Push those changes to the main branch.
 ### Step 7: Verify Release
 
 Check the Releases section of your GitHub repository to see if the release and tags were created automatically based on your commit messages.
-
-## Additional Configuration
-You can customize Semantic Release further by adding more plugins, such as:
-
-`@semantic-release/npm` to publish to npm.
-
-`@semantic-release/exec` for running custom commands.
 
 ## Summary
 
