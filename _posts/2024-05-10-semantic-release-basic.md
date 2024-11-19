@@ -91,6 +91,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   setup:
     uses: zhumeisongsong/shared-actions/.github/workflows/reusable-pnpm-setup.yml@main
