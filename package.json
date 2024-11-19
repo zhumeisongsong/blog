@@ -26,6 +26,8 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/dompurify": "^3.0.5",
     "@types/node": "^20.14.8",
     "@types/react": "^18.3.3",
@@ -49,7 +51,10 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
     ]
   },
   "packageManager": "pnpm@9.12.2",
