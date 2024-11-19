@@ -1,6 +1,7 @@
 {
   "name": "blog",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
+  "license": "MIT",
   "scripts": {
     "commit": "git-cz",
     "dev": "next",
@@ -11,6 +12,7 @@
     "textlint": "textlint '_posts/*.md'",
     "postbuild": "next-sitemap"
   },
+  "private": true,
   "dependencies": {
     "classnames": "^2.5.1",
     "date-fns": "^4.0.0",
@@ -52,6 +54,7 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
+      "@semantic-release/npm",
       "@semantic-release/github",
       "@semantic-release/git"
     ]
