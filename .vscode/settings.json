@@ -9,6 +9,7 @@
     "maisel",
     "Nextjs",
     "postbuild",
+    "tailwindcss",
     "textlint"
   ]
 }
