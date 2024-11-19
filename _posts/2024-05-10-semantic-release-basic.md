@@ -44,6 +44,10 @@ You could customize you changelog config by adding `changelog.config.cjs`, here 
 
 `pnpm install semantic-release -D`
 
+If you want to generate a changelog, you need to install `@semantic-release/changelog` and `@semantic-release/git`:
+
+`pnpm add -D @semantic-release/changelog @semantic-release/git`
+
 ### Step 2: Configure Your Project
 
 Add blow to package.json:
@@ -52,9 +56,12 @@ Add blow to package.json:
  "release": {
     "branches": ["main"],
     "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github",
+      "@semantic-release/commit-analyzer", // Analyze the commit messages
+      "@semantic-release/release-notes-generator", // Generate release notes
+      "@semantic-release/github", // Publish to GitHub
+      "@semantic-release/changelog", // Generate a changelog
+      "@semantic-release/npm", // Publish to npm
+      "@semantic-release/git" // Commit and push the changes
     ]
   }
 
