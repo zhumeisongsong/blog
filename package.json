@@ -59,10 +59,10 @@
       "@semantic-release/git"
     ]
   },
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.14.2",
   "volta": {
     "node": "22.11.0",
-    "pnpm": "9.12.2"
+    "pnpm": "9.14.2"
   },
   "config": {
     "commitizen": {
