@@ -35,29 +35,18 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@zhumeisong/git-cz-config": "^1.1.1",
+    "@zhumeisong/semantic-release-config": "^1.0.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
     "git-cz": "^4.9.0",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.4.38",
-    "semantic-release": "^24.1.2",
+    "semantic-release": "^24.1.3",
+    "semantic-release-npm-github-publish": "^1.5.5",
     "tailwindcss": "^3.4.4",
     "textlint": "^14.2.1",
     "typescript": "^5.5.2"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      "@semantic-release/git"
-    ]
   },
   "packageManager": "pnpm@9.14.2",
   "volta": {
