@@ -67,8 +67,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       '@zhumeisong/semantic-release-config':
-        specifier: ^1.2.1
-        version: 1.2.1
+        specifier: ^1.2.2
+        version: 1.2.2
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.20(postcss@8.4.47)
@@ -699,8 +699,8 @@ packages:
   '@zhumeisong/git-cz-config@1.1.1':
     resolution: {integrity: sha512-OPmi+IfK76kAeSdz6CnE5nTx9Bpz3UJMpnppxIDQlz6RSFXQDx3oG9XsvTHJJ8brZ7w/iBvFZgxWmFQfUhALuQ==}
 
-  '@zhumeisong/semantic-release-config@1.2.1':
-    resolution: {integrity: sha512-F8dAlK5pVYq5MZVoQyYcbUdYCmH3rmogSwYz6uBtWJBWFgfH+vfou4QEq+4SI+Ecm86mBtz7tqPPo3UicEds9w==}
+  '@zhumeisong/semantic-release-config@1.2.2':
+    resolution: {integrity: sha512-+2viHE7Mh46ehxZhuk/McULedu0tEhO9GhM9LssBdhwCWQcfPUXYcAhVPYeGK1Bn44xmxoRiiL+pIpMeeJKP2Q==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -4513,7 +4513,7 @@ snapshots:
 
   '@zhumeisong/git-cz-config@1.1.1': {}
 
-  '@zhumeisong/semantic-release-config@1.2.1': {}
+  '@zhumeisong/semantic-release-config@1.2.2': {}
 
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
