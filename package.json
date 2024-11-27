@@ -37,7 +37,7 @@
     "@zhumeisong/git-cz-config": "^1.1.1",
     "@zhumeisong/semantic-release-config": "^1.2.2",
     "autoprefixer": "^10.4.19",
-    "eslint": "^8",
+    "eslint": "^9.0.0",
     "eslint-config-next": "15.0.3",
     "git-cz": "^4.9.0",
     "next-sitemap": "^4.2.3",
