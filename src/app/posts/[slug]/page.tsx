@@ -36,7 +36,7 @@ export default async function Post({ params }: { params: PageParams }) {
 export async function generateMetadata({
   params,
 }: {
-  params: Params;
+  params: PageParams;
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
