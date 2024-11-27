@@ -5,9 +5,11 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+import { PageParams } from "@/interfaces/page-params";
 
-export default async function Post({ params }: Params) {
-  const post = getPostBySlug(params.slug);
+export default async function Post({ params }: { params: PageParams }) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return notFound();
@@ -31,14 +33,13 @@ export default async function Post({ params }: Params) {
   );
 }
 
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export function generateMetadata({ params }: Params): Metadata {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return notFound();
