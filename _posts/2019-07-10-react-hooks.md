@@ -15,7 +15,7 @@ The principles of hooks are based on `closures` and `state management`.
 
 Below are the core principles of Hooks:
 
-## Re-rendering of Functional Components
+## Re-rendering of Function Components
 
 Every time the components are re-rendered,  React sequentially invokes Hooks in the order they are called in the component code.
 
@@ -25,7 +25,7 @@ Every time the components are re-rendered,  React sequentially invokes Hooks in 
 
 React uses a global array or linked list structure to store the state of each component (e.g., the state managed by useState or useReducer). During every render, React maintains a pointer to the Hook storage corresponding to the current component.
 
-Since functional components are pure functions, React relies on the order of Hook calls to maintain their correctness.
+Since function components are pure functions, React relies on the order of Hook calls to maintain their correctness.
 
 ## Closures' Characteristics
 
