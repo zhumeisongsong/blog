@@ -1,5 +1,5 @@
 ---
-title: Be Humble
+title: "Be Humble"
 excerpt: ""
 coverImage: "/blog/assets/stay-humble-cover.jpg"
 date: "2024-11-18"
