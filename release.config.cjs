@@ -1,9 +1,9 @@
-const { createReleaseConfig } = require("@zhumeisong/semantic-release-config");
+const { createMonolithicReleaseConfig } = require("@zhumeisong/semantic-release-config");
 
 const srcRoot = "./";
 const pkgRoot = "./";
 
-module.exports = createReleaseConfig({
+module.exports = createMonolithicReleaseConfig({
   srcRoot,
   pkgRoot
 });
