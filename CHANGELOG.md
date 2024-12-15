@@ -1,3 +1,10 @@
+# [1.70.0](https://github.com/zhumeisongsong/blog/compare/v1.69.1...v1.70.0) (2024-12-15)
+
+
+### Features
+
+* ✨ add Key Principles of Clean Code ([f4d956a](https://github.com/zhumeisongsong/blog/commit/f4d956a93b128aa55de0740d02fac0eb82e15119))
+
 ## [1.69.1](https://github.com/zhumeisongsong/blog/compare/v1.69.0...v1.69.1) (2024-12-15)
 
 
