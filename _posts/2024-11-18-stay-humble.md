@@ -28,8 +28,6 @@ and,
 
 be humble.
 
-I promise, I NEVER become what I hate.
-
 
 
 
