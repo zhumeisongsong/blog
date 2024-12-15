@@ -1,3 +1,11 @@
+## [1.69.1](https://github.com/zhumeisongsong/blog/compare/v1.69.0...v1.69.1) (2024-12-15)
+
+
+### Bug Fixes
+
+* 🐛 cancel pin toefl 79 post ([fff379d](https://github.com/zhumeisongsong/blog/commit/fff379dd83e3eedffa4fc5605c144688cfd198e8))
+* 🐛 delete clean code book posts ([3fea501](https://github.com/zhumeisongsong/blog/commit/3fea501fc196125f6a0e3c6b98e022d719ec39f5))
+
 # [1.69.0](https://github.com/zhumeisongsong/blog/compare/v1.68.0...v1.69.0) (2024-12-15)
 
 
