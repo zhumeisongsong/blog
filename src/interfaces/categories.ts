@@ -15,7 +15,6 @@ export const defaultCategories = {
   git: "git",
   oss: "oss",
   "gas-station": "gas-station",
-  project: "project",
   "online-master": "online-master",
 } as const;
 

@@ -5,7 +5,6 @@ coverImage: "/blog/assets/quiz-game-cover.jpg"
 date: "2024-07-09"
 ogImage:
   url: "/blog/assets/quiz-game-cover.jpg"
-categories: ['project']
 ---
 
 This business plan integrates competitive points and focuses on leveraging AI for dynamic content, a unique interactive interface, and comprehensive user engagement strategies.
