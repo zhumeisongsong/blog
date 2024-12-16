@@ -7,6 +7,12 @@ type Props = {
   content: string;
 };
 
+const HEADING_MAIN_LEVEL = 2;
+const headingBaseClassNames = "block hover:opacity-80 hover:font-bold";
+const headingMainLevelClassNames = "text-stone-600 dark:text-stone-300 py-2";
+const headingSubLevelClassNames =
+  "text-stone-400 dark:text-stone-400 pl-4 py-1 border-l-2";
+
 export function ContentNavigation({ content }: Props) {
   const headings = extractHeadings(content);
   const [activeId, setActiveId] = useState<string>("");
@@ -64,24 +70,28 @@ export function ContentNavigation({ content }: Props) {
         className="absolute w-80 right-0 pl-8 text-sm"
       >
         <ul role="list">
-          {headings.map((heading, index) => (
-            <li key={index}>
-              <Link
-                href={`#${heading.id}`}
-                className={classNames(
-                  "block opacity-80 hover:opacity-100 hover:font-bold",
-                  heading.level === 2
-                    ? "text-stone-600 dark:text-stone-400 py-2"
-                    : "text-stone-400 dark:text-stone-500 pl-4 py-1 border-l-2",
-                  { "font-bold opacity-100": activeId === heading.id }
-                )}
-                aria-level={heading.level}
-                onClick={() => handleClickLink(heading.id)}
-              >
-                {heading.text}
-              </Link>
-            </li>
-          ))}
+          {headings.map((heading, index) => {
+            return (
+              <li key={index}>
+                <Link
+                  href={`#${heading.id}`}
+                  className={classNames(
+                    headingBaseClassNames,
+                    heading.level === HEADING_MAIN_LEVEL
+                      ? headingMainLevelClassNames
+                      : headingSubLevelClassNames,
+                    activeId === heading.id
+                      ? "font-bold opacity-100"
+                      : "opacity-50"
+                  )}
+                  aria-level={heading.level}
+                  onClick={() => handleClickLink(heading.id)}
+                >
+                  {heading.text}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>
