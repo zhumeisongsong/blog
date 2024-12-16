@@ -266,22 +266,6 @@ const user = { ...oldUser, isActive: true };
 oldUser.isActive = true;
 ```
 
-## Avoid any Type
-
-Use specific types to prevent unexpected errors.
-
-✅ Good:
-
-```typescript
-let userId: string;
-```
-
-❌ Bad:
-
-```typescript
-let userId: any;
-```
-
 ## Comment with Purpose
 
 Comments should explain "why," not "what." Avoid redundant comments.
