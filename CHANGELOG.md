@@ -1,3 +1,15 @@
+# [1.71.0](https://github.com/zhumeisongsong/blog/compare/v1.70.1...v1.71.0) (2024-12-16)
+
+
+### Bug Fixes
+
+* 🐛 remove category project ([6b46c95](https://github.com/zhumeisongsong/blog/commit/6b46c95807ed9dcb1352a62c3fbdd3c0facb2713))
+
+
+### Features
+
+* ✨ rename clean code ([4f522a7](https://github.com/zhumeisongsong/blog/commit/4f522a7e4f9c72f53b78f6a6b97ee356ccedbdc9))
+
 ## [1.70.1](https://github.com/zhumeisongsong/blog/compare/v1.70.0...v1.70.1) (2024-12-15)
 
 
