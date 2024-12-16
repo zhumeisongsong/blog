@@ -1,3 +1,10 @@
+## [1.70.1](https://github.com/zhumeisongsong/blog/compare/v1.70.0...v1.70.1) (2024-12-15)
+
+
+### Bug Fixes
+
+* 🐛 list up all in-progress posts ([dcd2750](https://github.com/zhumeisongsong/blog/commit/dcd2750d1cff6153f098a8ee5391a92248e13649))
+
 # [1.70.0](https://github.com/zhumeisongsong/blog/compare/v1.69.1...v1.70.0) (2024-12-15)
 
 
