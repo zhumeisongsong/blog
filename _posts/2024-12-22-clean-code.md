@@ -2,12 +2,16 @@
 title: "Key Principles of Clean Code"
 excerpt: ""
 coverImage: "/blog/assets/clean-code-cover.jpg"
-date: "2019-02-11"
+date: "2024-12-22"
 ogImage:
   url: "/blog/assets/clean-code-cover.jpg"
 categories: ["clean"]
 pin: true
 ---
+
+[Atrae Engineers Advent Calendar 2024](https://adventar.org/calendars/10486) (22nd)
+
+As a software engineer for 10 years, I still have strong passion for clean code.
 
 In software development, clean code is a set of principles that guide the creation of code that is easy to understand, maintain, and modify.
 
