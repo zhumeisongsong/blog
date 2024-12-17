@@ -200,30 +200,6 @@ if (user) {
 }
 ```
 
-## Error Handling
-
-Handle errors gracefully and avoid swallowing exceptions.
-
-✅ Good:
-
-```typescript
-try {
-  const data = await fetchData();
-} catch (error) {
-  console.error("Error fetching data", error);
-}
-```
-
-❌ Bad:
-
-```typescript
-try {
-  const data = await fetchData();
-} catch (error) {
-  // do nothing
-}
-```
-
 ## DRY (Don't Repeat Yourself)
 
 Avoid duplicating code; create reusable functions.
