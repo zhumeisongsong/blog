@@ -1,3 +1,12 @@
+# [1.72.0](https://github.com/zhumeisongsong/blog/compare/v1.71.0...v1.72.0) (2024-12-16)
+
+
+### Features
+
+* ✨ add blog footer ([de60878](https://github.com/zhumeisongsong/blog/commit/de60878c1dce17e55f77898293656875c292af66))
+* ✨ AllCategories layout ([ac0e1a7](https://github.com/zhumeisongsong/blog/commit/ac0e1a708887631ac464fcd2e87ea77a7551a883))
+* ✨ remove Avoid any Type ([e321e19](https://github.com/zhumeisongsong/blog/commit/e321e19547a2e80dfb169463256c497eb4fdef75))
+
 # [1.71.0](https://github.com/zhumeisongsong/blog/compare/v1.70.1...v1.71.0) (2024-12-16)
 
 
