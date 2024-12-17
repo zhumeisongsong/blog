@@ -1,3 +1,15 @@
+# [1.73.0](https://github.com/zhumeisongsong/blog/compare/v1.72.0...v1.73.0) (2024-12-17)
+
+
+### Bug Fixes
+
+* 🐛 delete error handler ([514e5b2](https://github.com/zhumeisongsong/blog/commit/514e5b237fdc26c6273cd7941bf900ab7304b531))
+
+
+### Features
+
+* ✨ delete project related post ([f5d72c4](https://github.com/zhumeisongsong/blog/commit/f5d72c417de765d4bbdb74ab54111f559ae67319))
+
 # [1.72.0](https://github.com/zhumeisongsong/blog/compare/v1.71.0...v1.72.0) (2024-12-16)
 
 
