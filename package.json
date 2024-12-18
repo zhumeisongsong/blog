@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "1.75.3",
+  "version": "1.76.0",
   "license": "MIT",
   "scripts": {
     "commit": "git-cz",
