@@ -2,7 +2,7 @@
 title: "Large Scale System Architecture"
 excerpt: ""
 coverImage: "/blog/assets/large-scale-system-architecture-cover.jpg"
-date: "2024-01-05"
+date: "2022-06-12"
 ogImage:
   url: "/blog/assets/large-scale-system-architecture-cover.jpg"
 categories: ["architecture"]

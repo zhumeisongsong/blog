@@ -2,7 +2,7 @@
 title: "Type vs Interface"
 excerpt: ""
 coverImage: "/blog/assets/type-interface-cover.jpg"
-date: "2021-06-10"
+date: "2019-10-13"
 ogImage:
   url: "/blog/assets/type-interface-cover.jpg"
 categories: ['typescript']

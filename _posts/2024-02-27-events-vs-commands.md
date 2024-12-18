@@ -2,7 +2,7 @@
 title: "Events vs Commands, What's the Difference?"
 excerpt: ""
 coverImage: "/blog/assets/events-commands-cover.jpg"
-date: "2023-10-20"
+date: "2024-02-27"
 ogImage:
   url: "/blog/assets/events-commands-cover.jpg"
 categories: ["basic"]

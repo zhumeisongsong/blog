@@ -2,7 +2,7 @@
 title: React Hooks Principles
 excerpt: ""
 coverImage: "/blog/assets/react-hooks-cover.jpg"
-date: "2019-12-25"
+date: "2019-07-10"
 ogImage:
   url: "/blog/assets/react-hooks-cover.jpg"
 categories: ["react"]
