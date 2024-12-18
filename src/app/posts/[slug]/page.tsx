@@ -49,6 +49,7 @@ export async function generateMetadata({
 
   return {
     title,
+    description: post.excerpt,
     openGraph: {
       type: "website",
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/posts/${post.slug}`,
