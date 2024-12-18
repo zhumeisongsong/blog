@@ -10,8 +10,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Song's Blog`,
-  description: `Objects are abstractions of processing. Threads are abstractions of schedule.`,
+  title: "Song's Blog",
+  description: "Objects are abstractions of processing. Threads are abstractions of schedule.",
   openGraph: {
     images: "",
   },

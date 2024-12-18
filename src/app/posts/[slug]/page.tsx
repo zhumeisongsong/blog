@@ -50,7 +50,10 @@ export async function generateMetadata({
   return {
     title,
     openGraph: {
+      type: "website",
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/posts/${post.slug}`,
       title,
+      description: post.excerpt,
       images: [
         new URL(post.coverImage, process.env.NEXT_PUBLIC_SITE_URL).toString(),
       ],
