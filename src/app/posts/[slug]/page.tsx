@@ -53,11 +53,9 @@ export async function generateMetadata({
     process.env.NEXT_PUBLIC_SITE_URL
   ).toString();
 
-  console.log(post);
-
   return {
     title,
-    description: post.excerpt,
+    description,
     openGraph: {
       type: "website",
       url,
