@@ -21,7 +21,10 @@ export function PostPreview({ title, coverImage, date, excerpt, slug }: Props) {
           overflow: "hidden",
         }}
       >
-        <CoverImage title={title} src={coverImage} />
+        <CoverImage
+          title={title}
+          image={{ src: coverImage }}
+        />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">{title}</h3>
       <div className="text-lg mb-4">

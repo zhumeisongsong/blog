@@ -22,7 +22,7 @@ export function PostHeader({ title, coverImage, date, categories }: Props) {
           overflow: "hidden",
         }}
       >
-        <CoverImage title={title} src={coverImage} />
+        <CoverImage title={title} image={{ src: coverImage, priority: true }} />
       </div>
       <div className="max-w-2xl ml-0 mr-auto">
         <div className="mb-6 text-lg">
