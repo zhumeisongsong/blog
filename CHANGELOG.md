@@ -1,3 +1,10 @@
+# [1.74.0](https://github.com/zhumeisongsong/blog/compare/v1.73.0...v1.74.0) (2024-12-18)
+
+
+### Features
+
+* ✨ add post description ([7d472ea](https://github.com/zhumeisongsong/blog/commit/7d472eaca3dd68d9cd6827c86ae1e2cba2d665ef))
+
 # [1.73.0](https://github.com/zhumeisongsong/blog/compare/v1.72.0...v1.73.0) (2024-12-17)
 
 
