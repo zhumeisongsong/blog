@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col items-end gap-6 pt-16 pb-4">
           <div className="flex flex-col items-end">
             <div className="text-xl">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span
                 style={{
                   background: "linear-gradient(120deg, #bd34fe 30%, #41d1ff)",
