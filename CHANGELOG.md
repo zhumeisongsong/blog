@@ -1,3 +1,10 @@
+## [1.75.1](https://github.com/zhumeisongsong/blog/compare/v1.75.0...v1.75.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* 🐛 post description ([750f425](https://github.com/zhumeisongsong/blog/commit/750f4257704de2c8d3813d4a91ce3f2061703ed8))
+
 # [1.75.0](https://github.com/zhumeisongsong/blog/compare/v1.74.0...v1.75.0) (2024-12-18)
 
 
