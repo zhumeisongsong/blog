@@ -1,3 +1,10 @@
+## [1.79.1](https://github.com/zhumeisongsong/blog/compare/v1.79.0...v1.79.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* 🐛 change date of post ([e8daedc](https://github.com/zhumeisongsong/blog/commit/e8daedc4e5c79ee125da1abe1defe185ce72831d))
+
 # [1.79.0](https://github.com/zhumeisongsong/blog/compare/v1.78.1...v1.79.0) (2024-12-18)
 
 
