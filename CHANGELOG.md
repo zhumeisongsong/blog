@@ -1,3 +1,10 @@
+## [1.78.1](https://github.com/zhumeisongsong/blog/compare/v1.78.0...v1.78.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* 🐛 cover image ([a283398](https://github.com/zhumeisongsong/blog/commit/a28339863110494c7994186554aee7e9da320986))
+
 # [1.78.0](https://github.com/zhumeisongsong/blog/compare/v1.77.1...v1.78.0) (2024-12-18)
 
 
