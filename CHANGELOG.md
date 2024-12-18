@@ -1,3 +1,10 @@
+# [1.76.0](https://github.com/zhumeisongsong/blog/compare/v1.75.3...v1.76.0) (2024-12-18)
+
+
+### Features
+
+* ✨ opacity 50 the description text ([33d9371](https://github.com/zhumeisongsong/blog/commit/33d9371bbd4445cbe7974779f19c290b1537937e))
+
 ## [1.75.3](https://github.com/zhumeisongsong/blog/compare/v1.75.2...v1.75.3) (2024-12-18)
 
 
