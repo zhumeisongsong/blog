@@ -2,7 +2,7 @@
 title: "Git Command"
 excerpt: ""
 coverImage: "/blog/assets/git-cover.jpg"
-date: "2016-10-08"
+date: "2016-07-08"
 ogImage:
   url: "/blog/assets/git-cover.jpg"
 categories: ['git']
