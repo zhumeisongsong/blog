@@ -1,3 +1,10 @@
+## [1.77.1](https://github.com/zhumeisongsong/blog/compare/v1.77.0...v1.77.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* 🐛 date is createdAt ([5788115](https://github.com/zhumeisongsong/blog/commit/5788115842ca583284a1f7a304ed437f926c62f5))
+
 # [1.77.0](https://github.com/zhumeisongsong/blog/compare/v1.76.0...v1.77.0) (2024-12-18)
 
 
