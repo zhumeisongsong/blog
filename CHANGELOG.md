@@ -1,3 +1,10 @@
+# [1.75.0](https://github.com/zhumeisongsong/blog/compare/v1.74.0...v1.75.0) (2024-12-18)
+
+
+### Features
+
+* ✨ remove pin ([df2ac29](https://github.com/zhumeisongsong/blog/commit/df2ac2938d9c572b14e971c2f17ae51b0dbac320))
+
 # [1.74.0](https://github.com/zhumeisongsong/blog/compare/v1.73.0...v1.74.0) (2024-12-18)
 
 
