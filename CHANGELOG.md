@@ -1,3 +1,10 @@
+# [1.79.0](https://github.com/zhumeisongsong/blog/compare/v1.78.1...v1.79.0) (2024-12-18)
+
+
+### Features
+
+* ✨ add docker post ([846b25b](https://github.com/zhumeisongsong/blog/commit/846b25bb746316756393479c7185c24c9633f2fc))
+
 ## [1.78.1](https://github.com/zhumeisongsong/blog/compare/v1.78.0...v1.78.1) (2024-12-18)
 
 
