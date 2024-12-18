@@ -46,18 +46,24 @@ export async function generateMetadata({
   }
 
   const title = `${post.title} | Song's Blog`;
+  const description = post.excerpt;
+  const url = `${process.env.NEXT_PUBLIC_SITE_URL}/posts/${post.slug}`;
+  const image = new URL(
+    post.coverImage,
+    process.env.NEXT_PUBLIC_SITE_URL
+  ).toString();
+
+  console.log(post);
 
   return {
     title,
     description: post.excerpt,
     openGraph: {
       type: "website",
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/posts/${post.slug}`,
+      url,
       title,
-      description: post.excerpt,
-      images: [
-        new URL(post.coverImage, process.env.NEXT_PUBLIC_SITE_URL).toString(),
-      ],
+      description,
+      images: [image],
     },
   };
 }
