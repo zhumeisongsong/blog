@@ -1,3 +1,10 @@
+# [1.80.0](https://github.com/zhumeisongsong/blog/compare/v1.79.1...v1.80.0) (2024-12-18)
+
+
+### Features
+
+* ✨ add agile post ([6d3f83f](https://github.com/zhumeisongsong/blog/commit/6d3f83f3c0ceb280efb7e035836bffd7c280bb4d))
+
 ## [1.79.1](https://github.com/zhumeisongsong/blog/compare/v1.79.0...v1.79.1) (2024-12-18)
 
 
