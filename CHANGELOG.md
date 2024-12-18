@@ -1,3 +1,10 @@
+# [1.77.0](https://github.com/zhumeisongsong/blog/compare/v1.76.0...v1.77.0) (2024-12-18)
+
+
+### Features
+
+* ✨ add priority to CoverImage ([c508dc6](https://github.com/zhumeisongsong/blog/commit/c508dc6a4d42be3adc5414cd1f1fc052d803c927))
+
 # [1.76.0](https://github.com/zhumeisongsong/blog/compare/v1.75.3...v1.76.0) (2024-12-18)
 
 
