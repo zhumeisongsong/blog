@@ -1,3 +1,11 @@
+## [1.75.3](https://github.com/zhumeisongsong/blog/compare/v1.75.2...v1.75.3) (2024-12-18)
+
+
+### Bug Fixes
+
+* 🐛 `'` can be escaped with `&apos;` ([e0c7dbd](https://github.com/zhumeisongsong/blog/commit/e0c7dbde747e9f5eb21ff23c2ce1741ad82a90eb))
+* 🐛 remove console ([e5ff0e0](https://github.com/zhumeisongsong/blog/commit/e5ff0e08ce59d0147fee3dd2b2b5bde312e3c86c))
+
 ## [1.75.2](https://github.com/zhumeisongsong/blog/compare/v1.75.1...v1.75.2) (2024-12-18)
 
 
