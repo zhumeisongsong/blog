@@ -6,7 +6,6 @@ date: "2024-11-18"
 ogImage:
   url: "/blog/assets/stay-humble-cover.jpg"
 categories: ["gas-station"]
-pin: true
 ---
 
 Be humble.
