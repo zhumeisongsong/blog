@@ -2,10 +2,11 @@
 title: "Be Humble"
 excerpt: ""
 coverImage: "/blog/assets/stay-humble-cover.jpg"
-date: "2024-11-18"
+date: "2023-11-18"
 ogImage:
   url: "/blog/assets/stay-humble-cover.jpg"
 categories: ["gas-station"]
+pin: true
 ---
 
 Be humble.
@@ -21,11 +22,7 @@ Stay away from the bad energy of those who are arrogant, prideful, aggressive or
 
 People have their own dilemmas.
 
-Keep your own pace,
-
-and,
-
-be humble.
+Keep your own pace.
 
 
 
