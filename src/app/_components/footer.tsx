@@ -21,7 +21,7 @@ export function Footer() {
                 Zhumei Song
               </span>
             </div>
-            <div>Software engineer based in Tokyo. 🇯🇵</div>
+            <div>Software Engineer based in Tokyo. 🇯🇵</div>
           </div>
 
           <div className="flex gap-2">
