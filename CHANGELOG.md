@@ -1,3 +1,10 @@
+# [1.81.0](https://github.com/zhumeisongsong/blog/compare/v1.80.1...v1.81.0) (2024-12-22)
+
+
+### Features
+
+* ✨ add Advent Calendar ([f2e1044](https://github.com/zhumeisongsong/blog/commit/f2e1044da2cc70e616943b65e2c402a6cab0da71))
+
 ## [1.80.1](https://github.com/zhumeisongsong/blog/compare/v1.80.0...v1.80.1) (2024-12-19)
 
 
