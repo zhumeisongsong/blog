@@ -1,3 +1,10 @@
+## [1.80.1](https://github.com/zhumeisongsong/blog/compare/v1.80.0...v1.80.1) (2024-12-19)
+
+
+### Bug Fixes
+
+* 🐛 Upper first letter of engineer ([133cebf](https://github.com/zhumeisongsong/blog/commit/133cebfcf4256c9a20a330e96b00c579212a2e55))
+
 # [1.80.0](https://github.com/zhumeisongsong/blog/compare/v1.79.1...v1.80.0) (2024-12-18)
 
 
