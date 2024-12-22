@@ -11,6 +11,12 @@ pin: true
 
 [Atrae Engineers Advent Calendar 2024](https://adventar.org/calendars/10486) (22nd)
 
+昨日は、岸真唯子(Maiko Kishi)さんによる[「学生インフラエンジニアが感じるその魅力と大切なこと」](https://note.com/maiko_kishi/n/ne08f80935eb2)でした！
+
+![alt text](/blog/assets/clean-code/image.png)
+
+--------
+
 In software development, clean code is a set of principles that guide the creation of code that is easy to understand, maintain, and modify.
 
 `Good software systems begin with clean code.` On the one hand, if the bricks aren’t well made, the architecture of the building doesn’t matter much. On the other hand, you can make a substantial mess with well-made bricks. This is where the SOLID principles come in.
