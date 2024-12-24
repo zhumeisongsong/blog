@@ -16,6 +16,7 @@ export const defaultCategories = {
   oss: "oss",
   "gas-station": "gas-station",
   "online-master": "online-master",
+  monorepo: "monorepo",
 } as const;
 
 export type Category =
