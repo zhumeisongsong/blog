@@ -1,3 +1,11 @@
+# [1.82.0](https://github.com/zhumeisongsong/blog/compare/v1.81.0...v1.82.0) (2024-12-24)
+
+
+### Features
+
+* ✨ add monorepo category ([f7a32b8](https://github.com/zhumeisongsong/blog/commit/f7a32b8b93c7508d664c63f2cbd1ec088c9de3c0))
+* ✨ add monorepo-library-buildable post ([5ca631b](https://github.com/zhumeisongsong/blog/commit/5ca631bbc62e041e358d46e590eebabeb65cf182))
+
 # [1.81.0](https://github.com/zhumeisongsong/blog/compare/v1.80.1...v1.81.0) (2024-12-22)
 
 
