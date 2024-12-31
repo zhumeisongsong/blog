@@ -1,6 +1,7 @@
 export const defaultCategories = {
   "front-end": "front-end",
   "back-end": "back-end",
+  "web-development": "web-development",
   "system-design": "system-design",
   ddd: "ddd",
   clean: "clean",
