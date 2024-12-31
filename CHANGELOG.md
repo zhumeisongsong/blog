@@ -1,3 +1,15 @@
+# [1.83.0](https://github.com/zhumeisongsong/blog/compare/v1.82.0...v1.83.0) (2024-12-31)
+
+
+### Bug Fixes
+
+* 🐛 remove pin ([b086362](https://github.com/zhumeisongsong/blog/commit/b08636210a4ec0c20b60e37b988ecf65f05f444b))
+
+
+### Features
+
+* ✨ add A11y post structure ([8372aad](https://github.com/zhumeisongsong/blog/commit/8372aad1c52991842febc3165afe2ecd8546c18d))
+
 # [1.82.0](https://github.com/zhumeisongsong/blog/compare/v1.81.0...v1.82.0) (2024-12-24)
 
 
