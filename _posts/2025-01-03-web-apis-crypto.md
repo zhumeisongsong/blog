@@ -1,10 +1,10 @@
 ---
 title: "Crypto: randomUUID() Method"
-excerpt: "Here are some key principles of clean code I usually follow. The examples are written in typescript."
+excerpt: ""
 coverImage: "/blog/assets/crypto-random-uuid-cover.jpg"
-date: "2024-12-22"
+date: "2025-01-03"
 ogImage:
-  url: "/blog/assets/clean-code-cover.jpg"
+  url: "/blog/assets/crypto-random-uuid-cover.jpg"
 categories: ["web-apis", "web-development", "basic"]
 pin: true
 ---

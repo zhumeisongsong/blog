@@ -18,6 +18,7 @@ export const defaultCategories = {
   "gas-station": "gas-station",
   "online-master": "online-master",
   monorepo: "monorepo",
+  "web-apis": "web-apis",
 } as const;
 
 export type Category =
