@@ -1,3 +1,10 @@
+## [1.84.1](https://github.com/zhumeisongsong/blog/compare/v1.84.0...v1.84.1) (2025-01-03)
+
+
+### Bug Fixes
+
+* 🐛 add missing category ([7cb99dc](https://github.com/zhumeisongsong/blog/commit/7cb99dcee9d83b6d045430556d73192b8a3fc91a))
+
 # [1.84.0](https://github.com/zhumeisongsong/blog/compare/v1.83.0...v1.84.0) (2025-01-03)
 
 
