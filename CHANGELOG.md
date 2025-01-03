@@ -1,3 +1,10 @@
+# [1.84.0](https://github.com/zhumeisongsong/blog/compare/v1.83.0...v1.84.0) (2025-01-03)
+
+
+### Features
+
+* ✨ add Crypto randomUUID ([de28ae9](https://github.com/zhumeisongsong/blog/commit/de28ae9b9433a13669151c8696985f1ddb30adaa))
+
 # [1.83.0](https://github.com/zhumeisongsong/blog/compare/v1.82.0...v1.83.0) (2024-12-31)
 
 
