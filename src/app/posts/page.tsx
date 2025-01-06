@@ -1,13 +1,13 @@
 import Container from "@/app/_components/container";
 import { Posts } from "@/app/_components/posts";
-import { getAllPosts } from "@/lib/api";
+import { getAllPostsGroupByYear } from "@/lib/api";
 import Header from "../_components/header";
 import { notFound } from "next/navigation";
 
 export default function AllPosts() {
-  const allPosts = getAllPosts();
+  const allPostsGroupByYear = getAllPostsGroupByYear();
 
-  if (!allPosts) {
+  if (!allPostsGroupByYear) {
     return notFound();
   }
 
@@ -15,14 +15,17 @@ export default function AllPosts() {
     <main>
       <Container>
         <Header />
-        {allPosts.length > 0 && (
-          <>
-            <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-              All Stories
-            </h2>
-            <Posts posts={allPosts} />
-          </>
-        )}
+
+        <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+          All Stories
+        </h2>
+
+        {allPostsGroupByYear.map(([year, posts]) => (
+          <div key={year}>
+            <h3 className="text-3xl font-bold mt-16 mb-8">{year} ({posts.length})</h3>
+            <Posts posts={posts} />
+          </div>
+        ))}
       </Container>
     </main>
   );

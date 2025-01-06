@@ -40,3 +40,22 @@ export function getPinnedPosts(): Post[] {
 
   return allPosts.filter((post) => post.pin);
 }
+
+export function getAllPostsGroupByYear(): [string, Post[]][] {
+  const allPosts = getAllPosts();
+
+  const postsGroupByYear = allPosts.reduce((acc, post) => {
+    const year = new Date(post.date).getFullYear();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  }, {} as Record<number, Post[]>);
+
+  const sortedPostsGroupByYear = Object.entries(postsGroupByYear).sort(
+    ([year1], [year2]) => Number(year2) - Number(year1)
+  );
+
+  return sortedPostsGroupByYear;
+}
