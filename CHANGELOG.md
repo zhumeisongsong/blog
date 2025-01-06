@@ -1,3 +1,10 @@
+# [1.85.0](https://github.com/zhumeisongsong/blog/compare/v1.84.1...v1.85.0) (2025-01-06)
+
+
+### Features
+
+* ✨ group post by year in all post page ([ae2164d](https://github.com/zhumeisongsong/blog/commit/ae2164d8450875ab73dc2c22f6762716444707bc))
+
 ## [1.84.1](https://github.com/zhumeisongsong/blog/compare/v1.84.0...v1.84.1) (2025-01-03)
 
 
