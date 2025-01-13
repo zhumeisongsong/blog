@@ -1,3 +1,10 @@
+# [1.86.0](https://github.com/zhumeisongsong/blog/compare/v1.85.0...v1.86.0) (2025-01-13)
+
+
+### Features
+
+* ✨ Update connection list item order ([5718836](https://github.com/zhumeisongsong/blog/commit/57188361748fa83ad2f7b06bc0fef8f088b31ee1))
+
 # [1.85.0](https://github.com/zhumeisongsong/blog/compare/v1.84.1...v1.85.0) (2025-01-06)
 
 
