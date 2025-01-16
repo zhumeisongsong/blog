@@ -1,3 +1,10 @@
+# [1.87.0](https://github.com/zhumeisongsong/blog/compare/v1.86.0...v1.87.0) (2025-01-16)
+
+
+### Features
+
+* ✨ add error handling post ([95e89c3](https://github.com/zhumeisongsong/blog/commit/95e89c30e61af2b5aaf0ad4147195263e6f80a91))
+
 # [1.86.0](https://github.com/zhumeisongsong/blog/compare/v1.85.0...v1.86.0) (2025-01-13)
 
 
