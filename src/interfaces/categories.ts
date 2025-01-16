@@ -12,6 +12,7 @@ export const defaultCategories = {
   typescript: "typescript",
   react: "react",
   nextjs: "nextjs",
+  nestjs: "nestjs",
   "semantic-release": "semantic-release",
   git: "git",
   oss: "oss",
