@@ -20,6 +20,8 @@ export const defaultCategories = {
   "online-master": "online-master",
   monorepo: "monorepo",
   "web-apis": "web-apis",
+  algorithm: "algorithm",
+  "data-structure": "data-structure",
 } as const;
 
 export type Category =
