@@ -1,3 +1,10 @@
+# [1.88.0](https://github.com/zhumeisongsong/blog/compare/v1.87.0...v1.88.0) (2025-01-20)
+
+
+### Features
+
+* ✨ add basic post ([a10048a](https://github.com/zhumeisongsong/blog/commit/a10048afa5fa9bb3bf1b3fdd6483da146c4c2ac5))
+
 # [1.87.0](https://github.com/zhumeisongsong/blog/compare/v1.86.0...v1.87.0) (2025-01-16)
 
 
