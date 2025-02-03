@@ -15,4 +15,12 @@ The `randomUUID()` method of the [Crypto](https://developer.mozilla.org/en-US/do
 
 crypto.randomUUID() is primarily a **browser-based API**, available in modern web browsers. It is part of the Web Cryptography API, and its use is restricted to environments that support it, such as browsers.
 
-However, it is **not available natively in Node.js (backend JavaScript environment)** without polyfills or external libraries.
+~~However, it is **not available natively in Node.js (backend JavaScript environment)** without polyfills or external libraries.~~
+
+Nodejs v14.17.0+ supports `crypto.randomUUID()` natively.
+
+```
+const crypto = require('crypto');
+const uuid = crypto.randomUUID();
+console.log(uuid);
+```
