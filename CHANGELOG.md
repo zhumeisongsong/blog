@@ -1,3 +1,10 @@
+## [1.89.1](https://github.com/zhumeisongsong/blog/compare/v1.89.0...v1.89.1) (2025-02-03)
+
+
+### Bug Fixes
+
+* 🐛 build error since line 1 is empty ([d84e5f4](https://github.com/zhumeisongsong/blog/commit/d84e5f4e60f112c3257c1d269dccd345da9d4f6d))
+
 # [1.89.0](https://github.com/zhumeisongsong/blog/compare/v1.88.0...v1.89.0) (2025-02-03)
 
 
