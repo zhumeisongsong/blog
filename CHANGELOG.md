@@ -1,3 +1,10 @@
+# [1.90.0](https://github.com/zhumeisongsong/blog/compare/v1.89.1...v1.90.0) (2025-02-03)
+
+
+### Features
+
+* ✨ nodejs supports randomUUID ([32108c2](https://github.com/zhumeisongsong/blog/commit/32108c28464d20b96d23d50499812bded72196d2))
+
 ## [1.89.1](https://github.com/zhumeisongsong/blog/compare/v1.89.0...v1.89.1) (2025-02-03)
 
 
