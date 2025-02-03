@@ -1,3 +1,10 @@
+# [1.89.0](https://github.com/zhumeisongsong/blog/compare/v1.88.0...v1.89.0) (2025-02-03)
+
+
+### Features
+
+* ✨ add ESM post ([6668f6d](https://github.com/zhumeisongsong/blog/commit/6668f6db2393d049cf299855a4a8bf6df8413477))
+
 # [1.88.0](https://github.com/zhumeisongsong/blog/compare/v1.87.0...v1.88.0) (2025-01-20)
 
 
