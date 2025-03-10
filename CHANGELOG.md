@@ -1,3 +1,10 @@
+## [1.90.1](https://github.com/zhumeisongsong/blog/compare/v1.90.0...v1.90.1) (2025-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies ([c59957f](https://github.com/zhumeisongsong/blog/commit/c59957fe7c63dbd8cabf62e7430efcb2fc5099c5))
+
 # [1.90.0](https://github.com/zhumeisongsong/blog/compare/v1.89.1...v1.90.0) (2025-02-03)
 
 
