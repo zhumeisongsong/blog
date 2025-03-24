@@ -9,7 +9,7 @@ categories: ["clean-architecture", "back-end", "nestjs"]
 pin: true
 ---
 
-In a Clean Architecture design, error handling is crucial to maintain separation of concerns between the various layers. In the context of NestJS, here's how error handlers can be structured for each layer:
+In Clean Architecture, error handling is crucial to maintain separation of concerns between the various layers. In the context of NestJS, here's how error handlers can be structured for each layer:
 
 ## Summary
 
@@ -23,8 +23,6 @@ Don't thank me. 😉
 |                     |                                                                                      |                                                                                                                                         | `User not found` (if part of the business logic)           |
 |                     |                                                                                      |                                                                                                                                         | `Insufficient funds` (if it violates business constraints) |
 | ValidationError     | Represents errors due to invalid input or failed validation checks.                  | Use when input data is invalid or fails validation checks, such as incorrect format or missing fields.                                  | `Invalid email format`                                     |
-|                     |                                                                                      |                                                                                                                                         | `Password too weak`                                        |
-|                     |                                                                                      |                                                                                                                                         | `Required field missing`                                   |
 |                     |                                                                                      |                                                                                                                                         | `Password too weak`                                        |
 |                     |                                                                                      |                                                                                                                                         | `Required field missing`                                   |
 | ApplicationError    | Represents errors that occur during application flow, often due to external factors. | Use for errors in the application layer that don't fall under domain logic or infrastructure errors but still disrupt the process flow. | `User not found` (in case it's due to an empty database)   |
