@@ -10,7 +10,7 @@ type Props = {
 
 const CoverImage = ({ title, image: { src, priority = false } }: Props) => {
   return (
-    <div className="sm:mx-0">
+    <div className="sm:mx-0 w-full">
       <Image
         src={src}
         alt={`Cover for ${title}`}
@@ -18,6 +18,7 @@ const CoverImage = ({ title, image: { src, priority = false } }: Props) => {
         height={630}
         priority={priority}
         quality={50}
+        className="w-full"
       />
     </div>
   );
