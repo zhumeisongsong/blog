@@ -1,3 +1,10 @@
+## [1.92.1](https://github.com/zhumeisongsong/blog/compare/v1.92.0...v1.92.1) (2025-04-21)
+
+
+### Bug Fixes
+
+* 🐛 ensure CoverImage component uses full width ([1da1471](https://github.com/zhumeisongsong/blog/commit/1da14710d1217d4c5cfb3bf9eb7b368ac348be1b))
+
 # [1.92.0](https://github.com/zhumeisongsong/blog/compare/v1.91.0...v1.92.0) (2025-04-21)
 
 
