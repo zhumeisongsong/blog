@@ -1,3 +1,10 @@
+# [1.92.0](https://github.com/zhumeisongsong/blog/compare/v1.91.0...v1.92.0) (2025-04-21)
+
+
+### Features
+
+* ✨ update git command post ([4ba54d2](https://github.com/zhumeisongsong/blog/commit/4ba54d2305008c408e30bb36702c639b48adf64a))
+
 # [1.91.0](https://github.com/zhumeisongsong/blog/compare/v1.90.1...v1.91.0) (2025-03-24)
 
 
