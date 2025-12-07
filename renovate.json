@@ -1,29 +1,47 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
-  "labels": ["type: dependencies"],
+  "extends": [
+    "config:recommended"
+  ],
+  "labels": [
+    "type: dependencies"
+  ],
   "dependencyDashboard": true,
-  "baseBranches": ["main"],
+  "baseBranchPatterns": [
+    "main"
+  ],
   "separateMultipleMajor": true,
   "timezone": "Asia/Tokyo",
-  "schedule": ["after 10pm and before 5am every weekday", "every weekend"],
+  "schedule": [
+    "after 10pm every weekday",
+    "every weekend",
+    "before 5am every weekday"
+  ],
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true
     },
     {
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
       "groupName": "devDependencies",
       "automerge": true
     },
     {
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": [
+        "dependencies"
+      ],
       "groupName": "dependencies",
       "automerge": false
     }
   ]
 }
-  
