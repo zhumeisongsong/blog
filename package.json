@@ -47,10 +47,10 @@
     "textlint": "^15.0.0",
     "typescript": "^5.5.2"
   },
-  "packageManager": "pnpm@10.18.1",
+  "packageManager": "pnpm@10.24.0",
   "volta": {
     "node": "24.11.1",
-    "pnpm": "10.18.1"
+    "pnpm": "10.24.0"
   },
   "config": {
     "commitizen": {
