@@ -5,6 +5,7 @@ coverImage: "/blog/assets/openclaw-docker-cover.jpg"
 date: "2026-03-12"
 ogImage:
   url: "/blog/assets/openclaw-docker-cover.jpg"
+pin: true
 ---
 
 ## What Is OpenClaw?
@@ -37,7 +38,11 @@ cd openclaw
 
 `docker-setup.sh` is an all-in-one script included in the repo. It builds the image, generates a gateway token, runs the onboarding wizard, and starts the gateway via Docker Compose.
 
-When it finishes, open `http://127.0.0.1:18789/` and paste the token from `.env` into the Control UI under **Settings → token**.
+When it finishes you should see output similar to this:
+
+![docker-setup.sh terminal output](/blog/assets/openclaw-docker-cover/terminal.png)
+
+Open `http://127.0.0.1:18789/` and paste the token from `.env` into the Control UI under **Settings → token**.
 
 To skip building from source and pull a pre-built image instead:
 
