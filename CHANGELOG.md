@@ -1,3 +1,10 @@
+# [1.93.0](https://github.com/zhumeisongsong/blog/compare/v1.92.2...v1.93.0) (2026-03-12)
+
+
+### Features
+
+* **post:** add guide for self-hosting OpenClaw with Docker ([cf4437b](https://github.com/zhumeisongsong/blog/commit/cf4437b6c370f2bc732023bc51ce043287f12913))
+
 ## [1.92.2](https://github.com/zhumeisongsong/blog/compare/v1.92.1...v1.92.2) (2025-05-31)
 
 
