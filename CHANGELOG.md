@@ -1,3 +1,10 @@
+# [1.94.0](https://github.com/zhumeisongsong/blog/compare/v1.93.0...v1.94.0) (2026-03-12)
+
+
+### Features
+
+* **post:** enhance OpenClaw Docker guide with terminal output and new images ([21a1655](https://github.com/zhumeisongsong/blog/commit/21a1655f29bcc0bb1737afb891b5a97f33163f3a))
+
 # [1.93.0](https://github.com/zhumeisongsong/blog/compare/v1.92.2...v1.93.0) (2026-03-12)
 
 
