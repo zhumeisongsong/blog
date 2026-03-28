@@ -2,7 +2,7 @@
 import { BodyMarkdown } from "@/app/_components/body-markdown";
 import { BodyMermaid } from "@/app/_components/body-mermaid";
 import { ContentNavigation } from "@/app/_components/content-navigation";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 
 type Props = {
   content: string;
@@ -22,20 +22,18 @@ const isMermaidGraph = (content: string) => {
 };
 
 export function PostBody({ content }: Props) {
-  const [array, setArray] = useState<string[]>([]);
+  const array = useMemo(() => {
+    if (!content) return [];
+    
+    const result = content.split("<!-- mermaid -->");
 
-  useEffect(() => {
-    if (content) {
-      const array = content.split("<!-- mermaid -->");
-
-      array.map((item, index) => {
-        if (item.trim().startsWith("```mermaid")) {
-          array[index] = item.replace("mermaid", "").replaceAll("```", "");
-        }
-      });
-      setArray(array);
-    }
-  }, [content, setArray]);
+    return result.map((item) => {
+      if (item.trim().startsWith("```mermaid")) {
+        return item.replace("mermaid", "").replaceAll("```", "");
+      }
+      return item;
+    });
+  }, [content]);
 
   return (
     <div>
